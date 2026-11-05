@@ -1,0 +1,3189 @@
+{
+  "fetched_at": "2026-11-05T17:18:40Z",
+  "source": "adzuna",
+  "search_params": {
+    "what": "stage informatique",
+    "sort_by": "date",
+    "results_per_page": 50
+  },
+  "offers": [
+    {
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "contract_time": "full_time",
+      "latitude": 44.84177,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels…",
+      "title": "STAGE - Ingénieur analyste Data Science - H/F",
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5954490208?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Mérignac, Bordeaux",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux",
+          "Mérignac"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTU0NDkwMjA4In0.PZBb4sf7WxguCTdqWsc3olRJ3uh8NUFQss8mKQSqh90",
+      "id": "5954490208",
+      "longitude": -0.6478,
+      "salary_is_predicted": "0",
+      "created": "2026-11-05T17:19:54Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Technicien informatique industrielle - F/H",
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels…",
+      "contract_time": "full_time",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "salary_is_predicted": "0",
+      "id": "5954468705",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTU0NDY4NzA1In0.aRxxOj9g3oa4wY3iquHjsPytbNpnK1wdAp0wKB3oDrE",
+      "redirect_url": "https://www.adzuna.fr/details/5954468705?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "France",
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T17:13:03Z"
+    },
+    {
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Nanterre",
+          "Courbevoie"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Courbevoie, Nanterre"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5954261756?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTU0MjYxNzU2In0.IpPlyel0nXCjW6djuZYl1WHYje3w3P_oxOjAHpZoleE",
+      "longitude": 2.25651,
+      "id": "5954261756",
+      "salary_is_predicted": "0",
+      "created": "2026-11-05T14:05:51Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "other-general-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Autres/Général"
+      },
+      "description": "Nous recherchons un ou une stagiaire pour prendre en main la gestion des équipements de nos salariés et de notre parc informatique. Vos missions Inventorier le matériel informatique et réviser les PC des salariés Apporter une première assistance aux utilisateurs en lien avec le prestataire informatique Gérer le parc de téléphones et de chargeurs : inventaire, remise, restitution, pannes Suivre les clés de bureaux, encoder les bips d'accès et gérer les codes d'alarme Rédiger des guides de foncti…",
+      "latitude": 48.89683,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "LA CANOPEE GCSMS"
+      },
+      "title": "Stage Informatique, accès et téléphonie F/H"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums. L'entreprise Sopra Steria recherche actuellement des profils : Description de l'entreprise Sopra Steria , acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et s…",
+      "latitude": 47.409153,
+      "company": {
+        "display_name": "Sopra Steria",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Business Analyst - Services Financiers - Nantes",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique"
+        ],
+        "display_name": "Loire-Atlantique, Pays de la Loire"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5954260767?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTU0MjYwNzY3In0.M0_ixj8vWR4ojzR3N1tnlNuuicNl56L-JTtvShscyG8",
+      "id": "5954260767",
+      "longitude": -1.542898,
+      "salary_is_predicted": "0",
+      "created": "2026-11-05T14:05:45Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "contract_time": "full_time",
+      "salary_min": 25000,
+      "latitude": 47.76866,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Actual Talent Metz IT"
+      },
+      "title": "Technicien de proximité informatique (F/H)",
+      "salary_max": 25000,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5954240806?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "category": {
+        "tag": "it-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Informatique"
+      },
+      "description": "Actual talent Metz recherche pour son client en informatique, un Technicien Support Informatique H/F dans le cadre d'une mission d'intérim de 3 mois sur RICHWILLER. - Contrat Intérim de 3 mois - Salaire 28k annuel brut - Démarrage immédiat - Véhicule de service mis à disposition Au sein d'une équipe dynamique et dans le cadre d'un renforcement d'équipe, vous intervenez directement auprès des utilisateurs pour garantir le bon fonctionnement des infrastructures et des équipements. Vos missions pr…",
+      "created": "2026-11-05T14:02:57Z",
+      "contract_type": "contract",
+      "location": {
+        "display_name": "Richwiller, Kingersheim",
+        "area": [
+          "France",
+          "Grand-Est",
+          "Haut-Rhin",
+          "Mulhouse",
+          "Kingersheim",
+          "Richwiller"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1NDI0MDgwNiIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.mXfGncoKV1O2txGL7m6vEsB7shZy3Dp4LrT0S73AZJ0",
+      "longitude": 7.30446,
+      "id": "5954240806"
+    },
+    {
+      "category": {
+        "tag": "graduate-jobs",
+        "label": "Emplois Diplômés",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Accor"
+      },
+      "title": "Stage : Direction Comptable Corporate – Stagiaire Contrôleur comptable – (H/F) – Hybride – ACCOR",
+      "description": "Description de l'entreprise LE GROUPE Pourquoi travailler chez Accor, groupe hôtelier, leader dans le secteur de l’hospitalité ? Nous sommes un écosystème de 40 marques dans 110 pays, de talents et de solutions, prêts à s'engager dans les possibilités infinies de l'avenir. Accor vous propose une nouvelle façon de vivre, de travailler, de vous divertir et de développer votre activité professionnelle grâce à une expérience client personnalisée. Groupe engagé, nous veillons plus que jamais à évolu…",
+      "latitude": 48.8231,
+      "contract_type": "contract",
+      "created": "2026-11-05T08:28:34Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzOTQyOTAzIn0.Kj8X2C_vInvqxbkRbnCOJ2RcMxNinziCIPDVmCw07RI",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Boulogne-Billancourt",
+          "Issy-les-Moulineaux"
+        ],
+        "display_name": "Issy-les-Moulineaux, Boulogne-Billancourt"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953942903?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": 2.27338,
+      "id": "5953942903"
+    },
+    {
+      "latitude": 47.27432,
+      "description": "En Zone Technique, les équipes de montage donnent vie aux plans des bureaux d'études. À bord des navires, elles installent notamment les réseaux de tuyauterie, les gaines de ventilation, les chemins de câbles et les équipements nécessaires au fonctionnement des salles machines. Pour réaliser ces travaux, elles s'appuient sur des plans et sur différents outils informatiques. Votre stage consiste à les accompagner dans l'utilisation de ces outils informatique, dans une démarche de digitalisation …",
+      "title": "Stage Technicien Digitalisation Industrielle H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Chantiers de l'Atlantique"
+      },
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "contract_time": "full_time",
+      "longitude": -2.21361,
+      "id": "5953869200",
+      "salary_is_predicted": "0",
+      "location": {
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Saint-Nazaire, Loire-Atlantique"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953869200?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1Mzg2OTIwMCIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.Cz8Wdno9-2Z5NlYMaO8pCQFp_wTMHZwCUEBoJy1FsiQ",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T06:23:25Z"
+    },
+    {
+      "title": "Stage - Ingénieur Réseaux & Cybersécurité H/F",
+      "company": {
+        "display_name": "Gerflor",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 44.28598,
+      "description": "Dans le cadre de l'évolution et de la sécurisation de ses infrastructures informatiques, GERFLOR recherche un(e) stagiaire en Réseaux & Cybersécurité pour rejoindre sa Direction des Systèmes d'Information. Intégré(e) à l'équipe Réseaux & Cybersécurité, vous participerez à plusieurs projets techniques visant à renforcer la sécurité, la fiabilité et la performance des infrastructures informatiques du Groupe. Ce stage vous permettra de développer vos compétences en administration des réseaux, en s…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "salary_is_predicted": "0",
+      "longitude": 4.93057,
+      "id": "5953868897",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1Mzg2ODg5NyIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.4Dc2UsOy_-s8X8p2TVExU7M3LK3dmIL8IIEp-adORd4",
+      "location": {
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Drôme",
+          "Nyons",
+          "Saint-Paul-Trois-Châteaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Saint-Paul-Trois-Châteaux, Nyons"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953868897?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T06:23:13Z"
+    },
+    {
+      "description": "Notre site dAngers accompagne nos clients dans le développement, la conception et la production de systèmes d'éclairage automobiles. Au sein de son Centre de Développement, rejoignez notre équipe R&D Test & Validation composée de 11 personnes pour une durée de 6 mois à 9 mois. Nous ne sommes pas informaticiens, mais nous savons exprimer nos besoins. Vos défis? - Assurer la continuité de service du logiciel de création des plans de validation des cartes électroniques (PVLF) - phase de Debug - Et…",
+      "company": {
+        "display_name": "Valeo",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage Ingénieur Informatique au Sein du Service Test & Validation Electronique H/F",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "contract_time": "full_time",
+      "id": "5953868436",
+      "salary_is_predicted": "0",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France"
+        ],
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953868436?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzODY4NDM2In0.Qnlu5hzcEhe86DGW-PO8N_vBjNluBaRworyn-ivAvto",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T06:22:56Z"
+    },
+    {
+      "description": "En tant que Stagiaire, vous contribuez au déploiement de solutions digitales innovantes dans notre laboratoire R&D Test Center Gaz. Vous programmez des tests automatisés, analysez les données et validez les nouveaux produits en cours de développement. Une immersion concrète dans l'instrumentation de process et l'automatisation de tests critiques. Vos missions Intégré au laboratoire R&D Test Center Gaz du site de Haguenau, vous participez au déploiement de solutions digitales pour optimiser le p…",
+      "latitude": 48.78177,
+      "title": "Stage R&D - Informatique Industrielle H/F",
+      "company": {
+        "display_name": "Siemens France",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "contract_time": "full_time",
+      "longitude": 7.65774,
+      "id": "5953868331",
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "Haguenau, Bas-Rhin",
+        "area": [
+          "France",
+          "Grand-Est",
+          "Bas-Rhin",
+          "Haguenau"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953868331?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzODY4MzMxIn0.dmyJS7xqleo5jMqmGKpkfYo0ZygV2NoFuoIP767rXhk",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T06:22:34Z"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5953653022",
+      "longitude": 2.344631,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MzY1MzAyMiIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.EGvitXG9mASTorSVPKBtLmfz-tZCjJmsdBO6NbqnP2E",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Paris"
+        ],
+        "display_name": "Paris, Ile-de-France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953653022?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-05T04:04:03Z",
+      "title": "Intern Data Analyst - Paris",
+      "company": {
+        "display_name": "LinkedIn Job Wrapping",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Qui sommes-nous ? Fondée en 2014, Artefact est une société française de services autour de la data, spécialisée dans le conseil en IA, transformation data et en data & digital marketing. L'approche unique d'Artefact, qui fait le pont entre la donnée et le business, permet à nos clients d'atteindre leurs objectifs business de façon dédiée et efficace. Nos 2500 collaborateurs répartis dans 27 bureaux à travers le monde allient leurs compétences pluridisciplinaires au profit de l'innovation busine…",
+      "latitude": 48.863839,
+      "category": {
+        "tag": "graduate-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés"
+      }
+    },
+    {
+      "latitude": 47.21684,
+      "description": "Description de l'entreprise Sopra Steria , acteur majeur de la Tech en Europe, avec 51 000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs d’activité et des tech…",
+      "company": {
+        "display_name": "Sopra Steria",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Business Analyst - Services Financiers - Nantes",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "id": "5953648013",
+      "longitude": -1.55674,
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/land/ad/5953648013?se=emIu8DzZ8RGtvMTShcjAjg&utm_medium=api&utm_source=7d6ca879&v=309586DD41AFBDF3A65A07AC8B9B6CCCDDBFEF97",
+      "location": {
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Nantes"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Nantes, Loire-Atlantique"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzNjQ4MDEzIn0.MLi0j4MZmRwcRu1WVqMaUoCXioGNNAUFfHDRK6_-qSw",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-05T04:03:17Z",
+      "contract_type": "contract"
+    },
+    {
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "description": "Lieu : Vélizy-Villacoublay, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'inno…",
+      "latitude": 48.78283,
+      "title": "STAGE - Analyse intelligente et détection d'incohérences dans des données hétérogènes - F / H",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Vélizy-Villacoublay"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Vélizy-Villacoublay, Versailles"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953364301?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MzM2NDMwMSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.AGRaUgmSIlB7Q2NyHgRPtH9IGN8sPRxbh0OzaMp1oq8",
+      "longitude": 2.19001,
+      "id": "5953364301",
+      "salary_is_predicted": "0",
+      "created": "2026-11-04T19:45:31Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzMzY0MjkzIn0.HwrCwtRiPThORMY5kdQS3AqlCO8ITDFchajgxlZ_MXs",
+      "redirect_url": "https://www.adzuna.fr/details/5953364293?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Vélizy-Villacoublay, Versailles",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Vélizy-Villacoublay"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "salary_is_predicted": "0",
+      "longitude": 2.19001,
+      "id": "5953364293",
+      "contract_type": "contract",
+      "created": "2026-11-04T19:45:31Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "title": "STAGE - Développement d'outils d'automatisation et d'optimisation des processus de développement - F / H",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Lieu : Vélizy-Villacoublay, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'inno…",
+      "latitude": 48.78283
+    },
+    {
+      "description": "A propos de nous Filiale du groupe CNP Assurances, CNP Assurances Protection Sociale est un acteur de référence en santé et prévoyance . Grâce à l’engagement de 1 400 collaborateurs, nous protégeons chaque jour 1,4 million de personnes et accompagnons entreprises, professionnels et particuliers avec des solutions utiles et responsables, au service du bien‑être et de la santé de tous. Rejoindre CNP Assurances Protection Sociale, c’est intégrer une entreprise à taille humaine qui valorise les par…",
+      "title": "Stage - Transformation Digitale Et Processus Achats (H/F)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "CNP Assurances Protection Sociale"
+      },
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "contract_time": "full_time",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T17:36:02Z",
+      "id": "5953185767",
+      "salary_is_predicted": "0",
+      "location": {
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953185767?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzMTg1NzY3In0.AbGpDDnsGHr9py6tPqHjDCZxyH4cLElHVbVl_DzRiew"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T17:32:44Z",
+      "salary_is_predicted": "0",
+      "id": "5953174818",
+      "longitude": 3.08242,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzMTc0ODE4In0.kVjOZXJZREGNziqUa093e9B9Az-6KGgbiSpIfvhmfqE",
+      "location": {
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Puy-de-Dôme",
+          "Clermont-Ferrand"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Clermont-Ferrand, Puy-de-Dôme"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953174818?utm_medium=api&utm_source=7d6ca879",
+      "title": "Stage - Explorer l’IA générative pour moderniser une application R&D (F/H)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Michelin"
+      },
+      "description": "Stage - Explorer l’IA générative pour moderniser une application R&D (F/H) - - - - - - - - - - - - Vous aimez comprendre comment les choses fonctionnent, tester des idées et apprendre en faisant ? Venez explorer les usages de l’IA générative sur un cas concret : la modernisation d’une application utilisée par les équipes Recherche & Développement de Michelin. Profil recherché : BAC3/5 : Formation supérieure en informatique Informations : Lieu du stage : site de Ladoux, à Cébazat (Puy de Dome) D…",
+      "latitude": 45.77717,
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "created": "2026-11-04T17:30:43Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzMTY4ODMwIn0.5uDgsdC3vIUAtxr9gkpPNuequ2TLyNm7YJz6gYkw5zk",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France"
+        ],
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953168830?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "id": "5953168830",
+      "contract_time": "full_time",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Ingénieur informatique industrielle - H/F",
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels…"
+    },
+    {
+      "id": "5953166839",
+      "longitude": 2.48816,
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "Boissy-Saint-Léger, Créteil",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Val-de-Marne",
+          "Créteil",
+          "Boissy-Saint-Léger"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5953166839?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUzMTY2ODM5In0.w-C_1nWiw8uuJPV130O8wWlZ6qudo_4zkcw_36vv5J0",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T17:29:55Z",
+      "latitude": 48.75135,
+      "description": "Headquartered in Lowell, Massachusetts, MACOM is certified to the ISO9001 international quality standard and ISO14001 environmental management standard. MACOM has multiple design centers, Si, GaAs and InP fabrication, manufacturing, assembly and test, and operational facilities throughout North America, Europe, Asia and Australia. In addition, MACOM offers foundry services that represents a key core competency within our business. The foundry provides access to, and control of our broad range o…",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "MACOM"
+      },
+      "title": "Stage electronique/informatique",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Actual St Laurent 469"
+      },
+      "title": "Chargé ressources humaines (H/F)",
+      "salary_min": 25000,
+      "latitude": 45.77268,
+      "contract_time": "full_time",
+      "salary_max": 35000,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5952956536?utm_medium=api&utm_source=7d6ca879",
+      "description": "Rejoignez l'équipe de notre client à Montrottier (69770) en tant que Généraliste Ressources Humaines (h/f). Dans le cadre d'un remplacement pour une durée d'au moins 4 mois, nous recherchons un collaborateur engagé et rigoureux pour accompagner notre développement. Vos missions principales : Sous la responsabilité du DRH, vous serez un pilier essentiel du service. Vous aurez pour mission de gérer l'administration du personnel, de conseiller et d'apporter un support quotidien aux collaborateurs.…",
+      "category": {
+        "tag": "hr-jobs",
+        "label": "Emplois RH et Recrutement",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "contract_type": "contract",
+      "created": "2026-11-04T14:13:11Z",
+      "id": "5952956536",
+      "longitude": 4.36844,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyOTU2NTM2In0.xXALoKVOtC2aXqf6_v2Vra-1lg-3w3qoOFbDqrJF2Oc",
+      "location": {
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Loire",
+          "Montbrison",
+          "Feurs",
+          "Panissières"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Panissières, Feurs"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "permanent",
+      "created": "2026-11-04T14:13:11Z",
+      "salary_is_predicted": "0",
+      "longitude": -2.21361,
+      "id": "5952956471",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyOTU2NDcxIn0.i7T-iD8wvFxadFmpP7m4lPuefgFlLrJIsfICTrUbZGU",
+      "redirect_url": "https://www.adzuna.fr/details/5952956471?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Montoir-de-Bretagne, Saint-Nazaire",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire",
+          "Montoir-de-Bretagne"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "title": "Stage Technicien(e) Digitalisation industrielle H/F",
+      "company": {
+        "display_name": "Chantiers de l'Atlantique",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 47.27432,
+      "description": "En Zone Technique, les équipes de montage donnent vie aux plans des bureaux d'études. À bord des navires, elles installent notamment les réseaux de tuyauterie, les gaines de ventilation, les chemins de câbles et les équipements nécessaires au fonctionnement des salles machines. Pour réaliser ces travaux, elles s'appuient sur des plans et sur différents outils informatiques. Votre stage consiste à les accompagner dans l'utilisation de ces outils informatique, dans une démarche de digitalisation …",
+      "contract_time": "full_time",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Autres/Général",
+        "tag": "other-general-jobs"
+      }
+    },
+    {
+      "salary_is_predicted": "0",
+      "longitude": 2.35123,
+      "id": "5952913017",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyOTEzMDE3In0.wlwmMRDxmQqQLaeXfeqnfI0Qxs52pHuf7Di2R6FlTzk",
+      "location": {
+        "display_name": "Dunkerque-Ouest, Dunkerque",
+        "area": [
+          "France",
+          "Hauts-De-France",
+          "Nord",
+          "Dunkerque",
+          "Dunkerque-Ouest"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952913017?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T14:03:17Z",
+      "title": "Alternance Développeur Web et support client - Téteghem-Coudekerque-Village (F/H)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "iSCOD"
+      },
+      "latitude": 50.97785,
+      "description": "Fi et équipements réseauVous êtes intéressé(e) par les environnements Open Source, l’infrastructure informatique et la cybersécuritéUne première expérience en développement web, support informatique ou réseau (stage, projet académique) serait un plusQualités personnelles :Vous avez le sens du service et appréciez le contact avec les utilisateursVous êtes curieux(se), autonome et force de propositionVous savez vous adapter à des missions variées et gérer plusieurs sujets en parallèleVous faites …",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "longitude": -0.71468,
+      "id": "5952824918",
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "Saint-Médard-en-Jalles, Bordeaux",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux",
+          "Saint-Médard-en-Jalles"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952824918?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyODI0OTE4In0.F5L8xINV-rI9fcChzP1zjbnn0BzvNTTf17umTcEgHkc",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T10:24:43Z",
+      "contract_type": "contract",
+      "description": "Description de l'offre : Dans le cadre de sa campagne de stage, ArianeGroup recrute une Ingénieure ou un Ingénieur spécialisé en en Informatique Industrielle / Automatisme - Data Science et Data Management IA en stage. Le service « Industrial Systems Automatization » assure le support technique et le développement d'équipements/moyens intelligents à base d'automates ou de robots pour les projets militaires et civils. Sous la responsabilité de votre maître de stage, vous participez aux missions …",
+      "latitude": 44.8952,
+      "title": "STAGE - Ingénieure / Ingénieur en Informatique Industrielle / Automatisme - Data Science et Data Management IA",
+      "company": {
+        "display_name": "ArianeGroup",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Bouches-du-Rhône",
+          "Aix-en-Provence",
+          "Aix en Provence Sud-Ouest"
+        ],
+        "display_name": "Aix en Provence Sud-Ouest, Aix-en-Provence"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952623722?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyNjIzNzIyIn0.u0pz2g0mxaA_FA-H_ujA4b1l3HEIt9Xlng5lMcWUPXo",
+      "id": "5952623722",
+      "longitude": 5.45414,
+      "salary_is_predicted": "0",
+      "created": "2026-11-04T06:55:00Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_max": 7464,
+      "category": {
+        "tag": "sales-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Vente"
+      },
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2i Academy et formez-vous en 12 mois à un métier au cœur de l'informatique ! Votre future formation Avec 2i Academy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation…",
+      "salary_min": 7464,
+      "latitude": 43.52491,
+      "company": {
+        "display_name": "2i Academy",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5952623715",
+      "longitude": -0.665018,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MjYyMzcxNSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.53uSwl2uQHypHdVd4dmHp3nauk7liiiPMO5NdlY_ses",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde"
+        ],
+        "display_name": "Gironde, Nouvelle-Aquitaine"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952623715?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-04T06:55:00Z",
+      "salary_max": 7464,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "salary_min": 7464,
+      "latitude": 44.910658,
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Emplois Vente",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "description": "Le/La Gestionnaire du budget des licences garantit l'optimisation financière du Système d'Information (SI) sur ce périmètre. Ce rôle clé fait le pont entre la Direction des Systèmes d'Information (DSI) et la Direction Financière. Il assure le suivi rigoureux des engagements de dépenses, gère le cycle complet de commande des licences informatiques, et veille à la à la bonne imputation des coûts par application et par société. Gestion et Pilotage Budgétaire IT Suivi des engagements : Rapprocher a…",
+      "category": {
+        "tag": "graduate-jobs",
+        "label": "Emplois Diplômés",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "created": "2026-11-04T04:35:08Z",
+      "contract_type": "permanent",
+      "longitude": 2.2879,
+      "id": "5952328452",
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Antony",
+          "Malakoff"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Malakoff, Antony"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyMzI4NDUyIn0.vCwBqaMYq9_5AcH9MM62xeACaWU2xgK4COTNb6r4Spo",
+      "salary_min": 52000,
+      "latitude": 48.81432,
+      "company": {
+        "display_name": "Safran",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Suivi du budget des licences informatiques F/H",
+      "salary_max": 72000,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5952328452?utm_medium=api&utm_source=7d6ca879"
+    },
+    {
+      "created": "2026-11-04T03:35:17Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "display_name": "Bordeaux, Gironde",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952270457?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyMjcwNDU3In0.RezMVhCN8BNzgvZaLcRLPpMb70Gis_64J-IuofdbH6c",
+      "id": "5952270457",
+      "longitude": -0.57614,
+      "salary_is_predicted": "0",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "latitude": 44.83737,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Technicien informatique industrielle - F/H"
+    },
+    {
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "latitude": 44.83737,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "title": "STAGE - Ingénieur analyste Data Science - H/F",
+      "location": {
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Bordeaux, Gironde"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952270446?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyMjcwNDQ2In0.1b4vchb6E_Z9B7KE-AQefuVzAKH8C4KKRsyWayeAa5U",
+      "id": "5952270446",
+      "longitude": -0.57614,
+      "salary_is_predicted": "0",
+      "created": "2026-11-04T03:35:17Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "created": "2026-11-04T03:04:53Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "display_name": "Panissières, Feurs",
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Loire",
+          "Montbrison",
+          "Feurs",
+          "Panissières"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952255515?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUyMjU1NTE1In0.FrLaL1D6DdJqf91tzSYpzQxE37J_O-Z-kh76xrZzGPM",
+      "id": "5952255515",
+      "longitude": 4.36844,
+      "salary_is_predicted": "0",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "latitude": 45.77268,
+      "description": "Description du poste : Rejoignez l'équipe de notre client à Montrottier (69770) en tant que Généraliste Ressources Humaines (h/f). Dans le cadre d'un remplacement pour une durée d'au moins 4 mois, nous recherchons un collaborateur engagé et rigoureux pour accompagner notre développement. Vos missions principales : Sous la responsabilité du DRH, vous serez un pilier essentiel du service. Vous aurez pour mission de gérer l'administration du personnel, de conseiller et d'apporter un support quotid…",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "France Travail"
+      },
+      "title": "Chargé ressources humaines (H/F)"
+    },
+    {
+      "contract_type": "permanent",
+      "created": "2026-11-04T01:54:28Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MjIwMjk5MiIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.En7C251TFWjfVbt9P6MrX6SEFPjrfizBnNYkxOaN8wo",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire"
+        ],
+        "display_name": "Saint-Nazaire, Loire-Atlantique"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952202992?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": -2.21361,
+      "id": "5952202992",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Chantiers de l'Atlantique"
+      },
+      "title": "Stage Technicien(e) Digitalisation industrielle H/F",
+      "latitude": 47.27432,
+      "description": "En Zone Technique, les équipes de montage donnent vie aux plans des bureaux d'études. À bord des navires, elles installent notamment les réseaux de tuyauterie, les gaines de ventilation, les chemins de câbles et les équipements nécessaires au fonctionnement des salles machines. Pour réaliser ces travaux, elles s'appuient sur des plans et sur différents outils informatiques. Votre stage consiste à les accompagner dans l'utilisation de ces outils informatique, dans une démarche de digitalisation …"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-03T19:46:41Z",
+      "id": "5952073768",
+      "longitude": 2.44097,
+      "salary_is_predicted": "0",
+      "location": {
+        "area": [
+          "France",
+          "Hauts-De-France",
+          "Nord",
+          "Dunkerque",
+          "Coudekerque-Branche"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Coudekerque-Branche, Dunkerque"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5952073768?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MjA3Mzc2OCIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.cchFhGz3pNua1Ww2zWtZPYK77q_xpI6PHdRe3nDcUJo",
+      "description": "Description de l'offre d'emploi: L’ISCOD, spécialiste de la formation en Digital Learning, recherche pour son entreprise partenaire, une société spécialisée dans les services informatiques, les télécommunications et la cybersécurité, un(e) Développeur Web & Technicien Informatique en contrat d’apprentissage, pour préparer l’une de nos formations diplômantes reconnues par l’État, de niveau 5 (Bac2).: Profil: Vous préparez un diplôme de niveau Bac2 en informatique et souhaitez développer vos comp…",
+      "latitude": 51.01681,
+      "title": "Alternance Développeur Web et support client - Téteghem-Coudekerque-Village (F/H)",
+      "company": {
+        "display_name": "ISCOD",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "redirect_url": "https://www.adzuna.fr/details/5951789565?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Bordeaux, Gironde",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MTc4OTU2NSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.soGXyDVCicmAa5hvEnleGUBtiXhTDXXmu81pB5eO2Xo",
+      "longitude": -0.57614,
+      "id": "5951789565",
+      "salary_is_predicted": "0",
+      "created": "2026-11-03T15:41:59Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "latitude": 44.83737,
+      "title": "STAGE - Ingénieur informatique industrielle - H/F",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "created": "2026-11-03T12:57:42Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5951642590?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Paris",
+          "13ème Arrondissement"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "13ème Arrondissement, Paris"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MTY0MjU5MCIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.b6_3xb-72QoAHpS9qwHp_bOCj6S_Na_UVY2OmQjjJzg",
+      "id": "5951642590",
+      "longitude": 2.35586,
+      "salary_is_predicted": "0",
+      "category": {
+        "tag": "engineering-jobs",
+        "label": "Emplois Ingénierie",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "contract_time": "full_time",
+      "latitude": 48.83192,
+      "description": "Contexte et objectifs du stage La Direction des Achats de CNP PS est structurée en trois pôles : Achats, Outils & Gestion des Achats, et Méthodes, Process et Pilotage. Ce dernier accompagne les acheteurs et les projets de la direction dans une logique d'amélioration continue, de structuration et de conformité. Dans le cadre de la mise en conformité avec la réglementation DORA (Digital Operational Resilience Act), le stagiaire contribuera à la mise à jour des processus achats, la mise en qualité…",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "CNP Assurance Protection sociale"
+      },
+      "title": "STAGE - TRANSFORMATION DIGITALE ET PROCESSUS ACHATS (H/F)"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-03T12:50:34Z",
+      "salary_is_predicted": "0",
+      "id": "5951625131",
+      "longitude": 2.4881,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MTYyNTEzMSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.Ib1bfZQ7-IhE3oAWmDEBRRuvkAg199UuBNvKfjcCo58",
+      "redirect_url": "https://www.adzuna.fr/details/5951625131?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Bonneuil-sur-Marne, Créteil",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Val-de-Marne",
+          "Créteil",
+          "Bonneuil-sur-Marne"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "title": "Stagiaire Magasinier - H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "EQUANS"
+      },
+      "description": " Stage – Assistant Magasinier H/F  Bonneuil (94) – Axima Réfrigération, Groupe EQUANS  Durée : 3 semaines à 2 mois Rejoignez Axima Réfrigération entité du groupe EQUANS, acteur majeur de la réfrigération en France. Grâce à son réseau de plus de 80 agences et de près de 2300 collaborateurs répartis sur le territoire, Axima Réfrigération France intervient de manière réactive pour répondre aux besoins des clients en installation, maintenance et dépannage dans le domaine du Froid commercial et du F…",
+      "latitude": 48.76839,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      }
+    },
+    {
+      "redirect_url": "https://www.adzuna.fr/details/5951410202?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Centre",
+          "Indre-et-Loire",
+          "Tours",
+          "Saint-Cyr-sur-Loire"
+        ],
+        "display_name": "Saint-Cyr-sur-Loire, Tours"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MTQxMDIwMiIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.JefX8MXCt8qcQNInwuMP1rlG4vlYeZr8ZA1e3mtsHrw",
+      "id": "5951410202",
+      "longitude": 0.68885,
+      "salary_is_predicted": "0",
+      "created": "2026-11-03T06:37:05Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_max": 7464,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Vente",
+        "tag": "sales-jobs"
+      },
+      "salary_min": 7464,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "latitude": 47.39029,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !"
+    },
+    {
+      "salary_min": 8184,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "latitude": 49.469,
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "company": {
+        "display_name": "2i Academy",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Emplois Vente",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_max": 8184,
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-03T06:37:05Z",
+      "id": "5951410201",
+      "longitude": 1.0901,
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5951410201?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Mont-Saint-Aignan, Rouen",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Normandie",
+          "Seine-Maritime",
+          "Rouen",
+          "Mont-Saint-Aignan"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMjAxIn0.--0EeDz55x4OxnI5y6I0y68O5UienIXiU__o8x7xA_E"
+    },
+    {
+      "created": "2026-11-03T06:37:05Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMjA1In0.V18JuBuBWzKwDTiqolawSHjPTs2gBKWuisYCq-wGppk",
+      "location": {
+        "display_name": "Loiret, Centre",
+        "area": [
+          "France",
+          "Centre",
+          "Loiret"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5951410205?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "id": "5951410205",
+      "longitude": 2.324043,
+      "category": {
+        "label": "Emplois Vente",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "sales-jobs"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "salary_min": 7464,
+      "latitude": 48.019247,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2i Academy et formez-vous en 12 mois à un métier au cœur de l'informatique ! Votre future formation Avec 2i Academy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation…",
+      "salary_max": 7464
+    },
+    {
+      "category": {
+        "tag": "sales-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Vente"
+      },
+      "salary_min": 7464,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "latitude": 48.84079,
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "salary_max": 7464,
+      "created": "2026-11-03T06:37:04Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5951410200?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Paris",
+          "12ème Arrondissement"
+        ],
+        "display_name": "12ème Arrondissement, Paris"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMjAwIn0.C9EgZJxfYzqNlKs9Z__WKDaUPoxrAZr2a8KJJVXiGw0",
+      "id": "5951410200",
+      "longitude": 2.38875,
+      "salary_is_predicted": "0"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-03T06:37:04Z",
+      "id": "5951410195",
+      "longitude": 3.171878,
+      "salary_is_predicted": "0",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Hauts-De-France",
+          "Nord"
+        ],
+        "display_name": "Nord, Hauts-De-France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5951410195?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMTk1In0.vDTKpA7vUZcNhUmaTPCzZ1aUmwWwJUKxC7cCS-XryLE",
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "salary_min": 8184,
+      "latitude": 50.447027,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "category": {
+        "tag": "it-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Informatique"
+      },
+      "salary_max": 8184
+    },
+    {
+      "location": {
+        "display_name": "1er-Arrondissement, Lyon",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Rhône",
+          "Lyon",
+          "1er-Arrondissement"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5951410196?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMTk2In0.OGpXEjjSS-0V_9tXzW_OvkG-Mx6p8hXTeN91vnq46Vc",
+      "longitude": 4.84891,
+      "id": "5951410196",
+      "salary_is_predicted": "0",
+      "created": "2026-11-03T06:37:04Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "salary_max": 7464,
+      "category": {
+        "tag": "sales-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Vente"
+      },
+      "latitude": 45.76043,
+      "salary_min": 7464,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "title": "Formation en alternance - Technicien Système et Réseaux H/F",
+      "company": {
+        "display_name": "2i Academy",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "created": "2026-11-03T06:37:04Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5951410197?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Saint-Herblain, Nantes",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Nantes",
+          "Saint-Herblain"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MTQxMDE5NyIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.DPv97C0pipgSFooWes-JhfCdKVdBgQqNwFdMtOVDJLs",
+      "id": "5951410197",
+      "longitude": -1.63888,
+      "salary_is_predicted": "0",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Vente",
+        "tag": "sales-jobs"
+      },
+      "salary_min": 7464,
+      "latitude": 47.21442,
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "2i Academy"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "salary_max": 7464
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-03T06:37:04Z",
+      "salary_is_predicted": "0",
+      "id": "5951410198",
+      "longitude": 7.094875,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUxNDEwMTk4In0.5kdXlacjUSY7kClUmHwtB5ZgXQ2aD3IV2OShwbAi5-g",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes"
+        ],
+        "display_name": "Alpes-Maritimes, Provence-Alpes-Côte d'Azur"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5951410198?utm_medium=api&utm_source=7d6ca879",
+      "company": {
+        "display_name": "2i Academy",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Formation Technicien systèmes et réseaux (Bac2) en alternance – Transformez votre passion pour l’informatique en métier !",
+      "description": "Vous aimez résoudre des problèmes techniques, comprendre les réseaux et découvrir les coulisses des systèmes informatiques ? A partir de Septembre 2027, rejoignez 2iAcademy et formez-vous en 12 mois à un métier au cœur de l'informatique ! ️VOTRE FUTURE FORMATION Avec 2iAcademy, école du groupe SKOLAE spécialisée dans les métiers de l’informatique, développez vos compétences grâce à une formation professionnalisante associant pratique et expérience en entreprise. Rythme : 1 semaine en formation …",
+      "salary_min": 8184,
+      "latitude": 43.680985,
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Emplois Vente",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_max": 8184
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MDcyMjIxNyIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.tJqWrwUNuGWcEF7SmV0IW0cF3C8gLe9dwbw8lIS2tRU",
+      "location": {
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Maine-et-Loire",
+          "Cholet"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Cholet, Maine-et-Loire"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5950722217?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": -0.8926,
+      "id": "5950722217",
+      "created": "2026-11-02T16:58:52Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_time": "full_time",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "title": "STAGE - Ingénieur IA Générative et Développement Logiciel – F/H",
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 46.99547,
+      "description": "Lieu : Cholet, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels q…"
+    },
+    {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Mistras France"
+      },
+      "title": "Stage Ingénieur Informatique H/F",
+      "latitude": 47.317605,
+      "description": "Dans le cadre de notre transformation digitale et du développement de nos outils internes, nous recherchons un(e) stagiaire Ingénieur Informatique. Vos missions Vous interviendrez sur des projets liés à la digitalisation de nos activités Qualité Sécurité Environnement (QSE) : - Développement et amélioration d'outils internes (applications QSE, outils de reporting, automatisation de process) - Participation à la conception de solutions logicielles adaptées aux besoins des équipes QSE - Analyse d…",
+      "contract_time": "full_time",
+      "category": {
+        "tag": "other-general-jobs",
+        "label": "Emplois Autres/Général",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "salary_is_predicted": "0",
+      "id": "5950126468",
+      "longitude": -2.188031,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1MDEyNjQ2OCIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.xSWra0OwrzYOKEcEgIkRkWakkefKHL_6rSI4-VNJtSs",
+      "redirect_url": "https://www.adzuna.fr/details/5950126468?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Pays-de-la-Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire",
+          "Trignac"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Trignac, Saint-Nazaire"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-02T03:57:42Z"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5950125873",
+      "longitude": 2.2879,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTUwMTI1ODczIn0.Co30A7sW7aaPkUy1zLfrZnLUrQTdV6fZO-sR8QxfE7Q",
+      "location": {
+        "display_name": "Malakoff, Antony",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Antony",
+          "Malakoff"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5950125873?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-02T03:57:17Z",
+      "title": "Stage - Suivi du Budget des Licences Informatiques H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Safran"
+      },
+      "latitude": 48.81432,
+      "description": "Le/La Gestionnaire du budget des licences garantit l'optimisation financière du Système d'Information (SI) sur ce périmètre. Ce rôle clé fait le pont entre la Direction des Systèmes d'Information (DSI) et la Direction Financière. Il assure le suivi rigoureux des engagements de dépenses, gère le cycle complet de commande des licences informatiques, et veille à la à la bonne imputation des coûts par application et par société.",
+      "contract_time": "full_time",
+      "category": {
+        "tag": "manufacturing-jobs",
+        "label": "Emplois Fabrication",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T17:12:25Z",
+      "id": "5949525643",
+      "salary_is_predicted": "0",
+      "location": {
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5949525643?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0OTUyNTY0MyIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.AVb3HyHvLpuka0JsAtQ_66myZRjmQDj6i_NdaEz8BHU",
+      "description": "Informations générales Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 s…",
+      "company": {
+        "display_name": "Naval Group",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Auditeur Interne H/F",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "location": {
+        "display_name": "France",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5949522325?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0OTUyMjMyNSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.ABSAu9KtLNFB6dJGKxeYvEAmyb3kYLxZLxOSrXzjQhE",
+      "id": "5949522325",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T17:08:57Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "description": "Informations générales Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 s…",
+      "title": "STAGE - Ingénieur Maintenance Sous-marins H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Naval Group"
+      }
+    },
+    {
+      "description": "Informations générales Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 s…",
+      "company": {
+        "display_name": "Naval Group",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Ingénieur méthodes et amélioration continue H/F",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T17:04:57Z",
+      "id": "5949510113",
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "France",
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5949510113?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ5NTEwMTEzIn0.yURNOagXQyVRixlGOOCXO1b7R_WtlCkAAzFhM8oNzLA"
+    },
+    {
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "contract_time": "full_time",
+      "latitude": 43.296172,
+      "description": "Lieu : Gémenos, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels …",
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage : Ingénieur électronique informatique F/M",
+      "redirect_url": "https://www.adzuna.fr/details/5949492820?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Bouches-du-Rhône",
+          "Marseille",
+          "La Ciotat",
+          " Gémenos"
+        ],
+        "display_name": " Gémenos, La Ciotat"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0OTQ5MjgyMCIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.shvu3FBDrIomxCYo1eZTNzQK13sl8iUlUxxijoqV9No",
+      "id": "5949492820",
+      "longitude": 5.629518,
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T16:58:51Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Comptabilité et Finance",
+        "tag": "accounting-finance-jobs"
+      },
+      "title": "Stage : Développeur(euse) fullstack Java F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "CGI"
+      },
+      "description": "Position Description: Nos équipes accompagnent les clients grands comptes lillois des secteurs retail, finance, service public et industrie sur des technologies variées et innovantes. CGI a choisi Lille pour implanter son centre d’excellence mondial pour le commerce et les services aux consommateurs. Tu rejoins CGI, leader mondial du conseil et des services numériques à Lille pour accompagner nos clients. Your future duties and responsibilities: - Monter en compétences sur les technologies Java…",
+      "latitude": 50.6389,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiZW1JdThEelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ5NDgzMTg2In0.teeuJmmKh0BfvF-t-yzESEuZ-oozq0swSUWbQDldhMI",
+      "location": {
+        "display_name": "Lille, Nord",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Hauts-De-France",
+          "Nord",
+          "Lille"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5949483186?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": 3.01224,
+      "id": "5949483186",
+      "created": "2026-11-01T16:54:37Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "company": {
+        "display_name": "RTE - Réseau de transport d'électricité",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Chargé en développement informatique et outils numériques F/H",
+      "latitude": 43.36309,
+      "description": "Lieu : 99 Rue de Lyon, Marseille, France Durée et/ou période du stage : de 2 à 6 mois à partir de janvier 2027 La Direction Transformation et Exploitation du Système Électrique de RTE recrute un(e) : Stagiaire en développement informatique et outils numériques à Marseille (13) La Direction Transformation et Exploitation du Système Électrique contribue à garantir la sûreté et la performance du réseau de transport d'électricité. Au sein de cette direction, le Centre Opérationnel du Système Électr…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T14:23:24Z",
+      "salary_is_predicted": "0",
+      "id": "5949310695",
+      "longitude": 5.34528,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0OTMxMDY5NSIsInMiOiJlbUl1OER6WjhSR3R2TVRTaGNqQWpnIn0.mjOsQo8WlR7HaW-ZJn_ZGqfmDIuT_h9mCpTBNzgOMis",
+      "location": {
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Bouches-du-Rhône",
+          "Marseille"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Marseille, Bouches-du-Rhône"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5949310695?utm_medium=api&utm_source=7d6ca879"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:59:28Z",
+      "salary_is_predicted": "0",
+      "longitude": 6.98104,
+      "id": "5948957177",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODk1NzE3NyIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.LInlKoxS7kLYNw-ZcbbQ9a_yCrp-MS-J81uO0i6VMVo",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse",
+          "Cannes"
+        ],
+        "display_name": "Cannes, Grasse"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948957177?utm_medium=api&utm_source=7d6ca879",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "title": "Stage Ingénieur Développement, Automatisation outils informatiques – (H/F)",
+      "latitude": 43.55444,
+      "description": "Lieu : Cannes, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      }
+    },
+    {
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "description": "Lieu : Cannes, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "latitude": 43.55444,
+      "title": "Stage – Ingénieur Informatique – Conception et déploiement d’un système informatique pour observation de satellites (H/F)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "created": "2026-11-01T09:58:03Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "display_name": "Cannes, Grasse",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse",
+          "Cannes"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948948638?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQ4NjM4In0.2ogfPQROBT0zfB7MwR2utFGzTKPMQToq3CbX0P4ZIHc",
+      "longitude": 6.98104,
+      "id": "5948948638",
+      "salary_is_predicted": "0"
+    },
+    {
+      "location": {
+        "display_name": "Grasse, Alpes-Maritimes",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948948515?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODk0ODUxNSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.6m9WcaKkEs27wWmYk10rExcBWxIkR3dZOA11CHVFFSE",
+      "id": "5948948515",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T09:58:02Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "description": "Lieu : Sophia Antipolis, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovat…",
+      "title": "Stage - Ingénieur DevOps/Cloud - F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      }
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQ4MDI2In0.hDGWhVsCR-QfUPNP6sAAH2TcuCpYfWnBtxW-m26-DHU",
+      "redirect_url": "https://www.adzuna.fr/details/5948948026?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Gennevilliers, Nanterre",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Nanterre",
+          "Gennevilliers"
+        ]
+      },
+      "salary_is_predicted": "0",
+      "id": "5948948026",
+      "longitude": 2.29927,
+      "contract_type": "contract",
+      "created": "2026-11-01T09:57:58Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "title": "STAGE - Ingénieur IA & Automatisation stratégie de tests logiciels - F/H",
+      "latitude": 48.93349,
+      "description": "Lieu : Gennevilliers, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation…"
+    },
+    {
+      "contract_type": "contract",
+      "created": "2026-11-01T09:57:09Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQ2MTAxIn0.UOKlb-aQo6RsVEM0SWsdyegkXZ7tDWyS1NI8cjnGUvQ",
+      "location": {
+        "display_name": "Élancourt, Versailles",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Élancourt"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948946101?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": 1.958306,
+      "id": "5948946101",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "title": "STAGE - Chef de Projet Business Intelligence (H/F)",
+      "latitude": 48.783341,
+      "description": "Lieu : Elancourt, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tel…"
+    },
+    {
+      "latitude": 48.783341,
+      "description": "Lieu : Elancourt, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tel…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Project Manager Artificial Intelligence Ops (AIOps) – H/F",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T09:57:07Z",
+      "contract_type": "contract",
+      "id": "5948945772",
+      "longitude": 1.958306,
+      "salary_is_predicted": "0",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Élancourt"
+        ],
+        "display_name": "Élancourt, Versailles"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948945772?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQ1NzcyIn0.pyXQg-0LU8k60XG7hob2OOfHpFQnTbz7XkgtP4vEO_s"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "latitude": 43.55444,
+      "description": "Lieu : Cannes, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Ingénieur Informatique, Conception et Développement Web des Interfaces web de contrôle de satellites – (H/F)",
+      "created": "2026-11-01T09:57:01Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5948945427?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Cannes, Grasse",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse",
+          "Cannes"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQ1NDI3In0.cke7BZem5wBTVBNJGujqbRClE_cGMYacm2mQTmSbgOM",
+      "id": "5948945427",
+      "longitude": 6.98104,
+      "salary_is_predicted": "0"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T09:56:32Z",
+      "contract_type": "contract",
+      "id": "5948941112",
+      "longitude": -2.21361,
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "Saint-Nazaire, Loire-Atlantique",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948941112?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTQxMTEyIn0.AqKXFBah_3qE0Ryz_GYrl1nfTN5ubPw3m2hlnvOx4sc",
+      "latitude": 47.27432,
+      "description": "Vous souhaitez mettre l'intelligence artificielle au service de l'analyse de données industrielles ? Rejoignez notre équipe pour concevoir et expérimenter un prototype permettant d'interroger les données de l'entreprise en langage naturel, tout en respectant les contraintes de confidentialité. Vous intégrerez le secteur Performance Énergétique et Environnementale de la Direction des Affaires et Ingénierie Navires, au sein d'une équipe de 14 personnes. Vous évoluerez dans un environnement de tra…",
+      "title": "Stage - Ingénieur(e) Machine Learning et Informatique H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Chantiers de l'Atlantique"
+      },
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      }
+    },
+    {
+      "title": "Stage – Ingénieur Fiabilité Système et Logiciel – H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "description": "Lieu : Cannes, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "latitude": 43.55444,
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:30Z",
+      "salary_is_predicted": "0",
+      "longitude": 6.98104,
+      "id": "5948920928",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkyMDkyOCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.oIPRPGHnwrE22eevsda_dp2MLzLbiQHQe51G5OSSzdc",
+      "redirect_url": "https://www.adzuna.fr/details/5948920928?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Cannes, Grasse",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse",
+          "Cannes"
+        ]
+      }
+    },
+    {
+      "salary_is_predicted": "0",
+      "longitude": 1.958306,
+      "id": "5948919414",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE5NDE0In0.-5owaPoLpfEK1jkfUbWlhVFhMbHZHfH_zLdLR81DWOY",
+      "redirect_url": "https://www.adzuna.fr/details/5948919414?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Élancourt, Versailles",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Élancourt"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:24Z",
+      "title": "STAGE - Réalisation d'un Serious Games dans le domaine de l'architecure logicielle - F/H",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Lieu : Elancourt, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tel…",
+      "latitude": 48.783341,
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "created": "2026-11-01T09:45:22Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5948918983?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "L'Haÿ-les-Roses, Val-de-Marne",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Val-de-Marne",
+          "L'Haÿ-les-Roses"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE4OTgzIn0.NKbGm2d7jR4kxDwSi5xiAWAI9Mzpzc-a9n64eyKtX6g",
+      "id": "5948918983",
+      "salary_is_predicted": "0",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "description": "Lieu : Rungis, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Outil d’analyse des performances opérationnelles des systèmes anti-aérien - F/H"
+    },
+    {
+      "location": {
+        "display_name": "L'Haÿ-les-Roses, Val-de-Marne",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Val-de-Marne",
+          "L'Haÿ-les-Roses"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948919041?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxOTA0MSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.NOdxBZOMphr9l7WEdP9btw2Qf1Rkr6T7nVHC3NmNNB0",
+      "id": "5948919041",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T09:45:22Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "description": "Lieu : Rungis, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Algorithme - Extraction d’heuristiques d’un code source en programmation par contraintes - F/H"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5948918683",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxODY4MyIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.Sfi4n3tNZWTLlFdbY-BnR2-QjHIvTyUSZx1kybEdnJo",
+      "redirect_url": "https://www.adzuna.fr/details/5948918683?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Grasse, Alpes-Maritimes",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:21Z",
+      "title": "Stage - Conception et développement logiciel de simulation – (H/F)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "description": "Lieu : Sophia Antipolis, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovat…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "redirect_url": "https://www.adzuna.fr/details/5948918669?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse"
+        ],
+        "display_name": "Grasse, Alpes-Maritimes"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE4NjY5In0.zUfTUtndGr2v4mX0fOw3RM45yBIl28eYsacMF5BGIEI",
+      "id": "5948918669",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T09:45:21Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "description": "Lieu : Sophia Antipolis, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovat…",
+      "title": "Stage - Ingénierie Système - H/F",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "location": {
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Bordeaux, Gironde"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948918711?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxODcxMSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.HR-xVhNpPQefQIw1kN3JtcdhkJZtuQIkgmd5HvF8-XI",
+      "longitude": -0.57614,
+      "id": "5948918711",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T09:45:21Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "latitude": 44.83737,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Ingénieur IA agentique et embarquée : cas d'application des modèles \"System One\" / \"Jev\" - F/H"
+    },
+    {
+      "title": "STAGE - Navigation Automatique aidée par la vision - F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "description": "Lieu : Elancourt, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tel…",
+      "latitude": 48.783341,
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "salary_is_predicted": "0",
+      "longitude": 1.958306,
+      "id": "5948916288",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE2Mjg4In0.T2AAuwSzI0dyH4XwTHubT5T6A6Cp22fIOiEbpbLzPjc",
+      "redirect_url": "https://www.adzuna.fr/details/5948916288?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines",
+          "Versailles",
+          "Élancourt"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Élancourt, Versailles"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:11Z"
+    },
+    {
+      "id": "5948916207",
+      "longitude": -0.8926,
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5948916207?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Maine-et-Loire",
+          "Cholet"
+        ],
+        "display_name": "Cholet, Maine-et-Loire"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxNjIwNyIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.5KEIrTKs2p07fCnegRLu8tmIg__6QYvutmZyMwQ829o",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T09:45:10Z",
+      "contract_type": "contract",
+      "latitude": 46.99547,
+      "description": "Lieu : Cholet, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "title": "STAGE - Ingénieur DevOps - Conteneurisation, automatisation des tests Docker et CI-CD - F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      }
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxNTgxNiIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.Cz_WPxh8iG0RBENYKZ3LQbtkoZEffCmKzo8esCcLZxc",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "display_name": "Bordeaux, Gironde"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948915816?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "id": "5948915816",
+      "longitude": -0.57614,
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:09Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "title": "STAGE - Ingénieur développement d’outils de dépouillements des enregistrements radar - H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "latitude": 44.83737
+    },
+    {
+      "title": "Stage – Ingénieur Intelligence artificielle Safety et contrôle des Défaillances spatiales – (H/F)",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 43.55444,
+      "description": "Lieu : Cannes, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels q…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "salary_is_predicted": "0",
+      "id": "5948915858",
+      "longitude": 6.98104,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE1ODU4In0.qT3D3tHoWrDtzwppxy7L6dNQesycUXZVvNkDduma55U",
+      "redirect_url": "https://www.adzuna.fr/details/5948915858?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Cannes, Grasse",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Provence-Alpes-Côte d'Azur",
+          "Alpes-Maritimes",
+          "Grasse",
+          "Cannes"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:09Z"
+    },
+    {
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "title": "STAGE – Ingénieur DevOps : mise à hauteur chaine CI/CD Logiciel Radar F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "latitude": 44.83737,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:09Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTE1OTAzIn0.hCjMqb6NOndzfdezwr6cJN3kIoKzC7qdALY6qVTmDuA",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "display_name": "Bordeaux, Gironde"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948915903?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "id": "5948915903",
+      "longitude": -0.57614
+    },
+    {
+      "title": "STAGE – Ingénieur informatique quantique | Traitement de données spatiales – F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "latitude": 43.60436,
+      "description": "Lieu : Toulouse, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "salary_is_predicted": "0",
+      "id": "5948915727",
+      "longitude": 1.44295,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkxNTcyNyIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.W6w4w3Yjc9zqM-EvXiSgQMOtOgzX5vwWS2kEM0kB4vw",
+      "redirect_url": "https://www.adzuna.fr/details/5948915727?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Toulouse, Haute-Garonne",
+        "area": [
+          "France",
+          "Occitanie",
+          "Haute-Garonne",
+          "Toulouse"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:45:08Z"
+    },
+    {
+      "redirect_url": "https://www.adzuna.fr/details/5948908462?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Jonage, Lyon",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Rhône",
+          "Lyon",
+          "Jonage"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkwODQ2MiIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.klRNwMTCuTscJ3SjoXtDwAofIKnRtDguoL0joaq0Bu4",
+      "longitude": 5.047563,
+      "id": "5948908462",
+      "salary_is_predicted": "0",
+      "created": "2026-11-01T09:41:55Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "description": "Lieu : Jonage (69330) Durée / Période : Février 2027 à Fin juin 2027 (environ 5 mois) Au sein du Département Contrôle Commande Local la Direction Technique de RTE, le Service CFS (Composants et Fonctions de Site) recrute un(e) : Stagiaire - Chargé de Proiet Réseaux et Informatique Industrielle F/H à Jonage. Le service CFS (composé de 24 personnes) regroupe des activités de projets, de gestion d'actif, d'ingénierie produit et de gestion de produits tout au long de leur cycle de vie. L'équipe s'o…",
+      "latitude": 45.796518,
+      "title": "Stage - Chargé de Projet Réseaux et Informatique Industrielle F/H",
+      "company": {
+        "display_name": "RTE - Réseau de transport d'électricité",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:41:50Z",
+      "salary_is_predicted": "0",
+      "id": "5948907893",
+      "longitude": -0.71468,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4OTA3ODkzIn0.qtq-qVWPgiI5LsA2BscTMajWKmGuUnaK9qrSW9DyjLI",
+      "location": {
+        "display_name": "Saint-Médard-en-Jalles, Bordeaux",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux",
+          "Saint-Médard-en-Jalles"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948907893?utm_medium=api&utm_source=7d6ca879",
+      "title": "STAGE – Ingénieure / Ingénieur en Informatique et Data Science",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "ArianeGroup"
+      },
+      "description": "Description de l'offre : Dans le cadre de sa campagne de stage, ArianeGroup recrute une Ingénieure ou un Ingénieur en Informatique et Data Science. Le service auquel vous serez rattaché réalise les activités de connexion des machines et d'exploitation de leurs données au service de la performance industrielle. Sous la responsabilité de votre tuteur, vous participerez aux missions suivantes : * Recueil et analyse des besoins auprès des utilisateurs terrain ; * Conception et création de tableaux …",
+      "latitude": 44.8952,
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      }
+    },
+    {
+      "title": "STAGE - Exploitation des IA génératives pour l’ingénierie système - H/F",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Lieu : Massy-Carnot, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation …",
+      "latitude": 48.7303,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "salary_is_predicted": "0",
+      "id": "5948901999",
+      "longitude": 2.27287,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODkwMTk5OSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.7X0PFEi-ap0H46J_Wzr11uPaqK7kIZPyEzyXCfYtTIk",
+      "redirect_url": "https://www.adzuna.fr/details/5948901999?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Massy, Palaiseau",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Essonne",
+          "Palaiseau",
+          "Massy"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:41:01Z"
+    },
+    {
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4ODk5ODMxIn0.tL6mPU5iBWJert2XxQjn7ZcRt7CzhOA_E2WsUTZivRY",
+      "redirect_url": "https://www.adzuna.fr/details/5948899831?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Bordeaux, Gironde"
+      },
+      "salary_is_predicted": "0",
+      "id": "5948899831",
+      "longitude": -0.57614,
+      "contract_type": "contract",
+      "created": "2026-11-01T09:40:24Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "title": "STAGE - Ingénieur développement outil logiciel Application Visu - H/F",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "latitude": 44.83737,
+      "description": "Lieu : Bordeaux, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown",
+        "tag": "unknown"
+      },
+      "title": "STAGE - Technicienne / Technicien informatique",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "ArianeGroup"
+      },
+      "latitude": 44.873167,
+      "description": "Description de l'offre: Dans le cadre de sa campagne de stage, ArianeGroup recrute une Technicienne /un Technicien informatique pour réaliser une étude de faisabilité et migration d'un système de Photogrammétrie. Au sein du département des essais, le service réalise les activités suivantes : - prépare, organise, installe et met en œuvre les essais sur plusieurs phases du cycle de vie des produits : développement, série et vieillissement - réalise les tests et les mesures - exploite les résultat…",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4ODk5NTIzIn0.4L4EMFISWDR1Sbuc_uFD8mU3vK4zzzKs419nTkZKwCg",
+      "location": {
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Gironde",
+          "Bordeaux",
+          "Le Haillan"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Le Haillan, Bordeaux"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948899523?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": -0.677914,
+      "id": "5948899523",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:40:21Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "salary_is_predicted": "0",
+      "longitude": 5.73163,
+      "id": "5948898087",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4ODk4MDg3In0.0XD7BeZaN0O9jw2w_NYF7ZBtQzzpEEc8Jbcs2wGKb1U",
+      "redirect_url": "https://www.adzuna.fr/details/5948898087?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Isère",
+          "Grenoble"
+        ],
+        "display_name": "Grenoble, Isère"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:40:07Z",
+      "title": "STAGE – Développeur JAVA full stack – F/H",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "THALES"
+      },
+      "latitude": 45.19428,
+      "description": "Lieu : Grenoble, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels…",
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:40:04Z",
+      "salary_is_predicted": "0",
+      "id": "5948897716",
+      "longitude": -0.77356,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4ODk3NzE2In0.F5N8miqQfU-ma2XIVTLP0i2a8iu_3JALSV81UH9VEOY",
+      "location": {
+        "display_name": "Laval, Mayenne",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Mayenne",
+          "Laval"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948897716?utm_medium=api&utm_source=7d6ca879",
+      "title": "STAGE - Ingénieur en informatique développement outils - F/H",
+      "company": {
+        "display_name": "THALES",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "description": "Lieu : Laval, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d'activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l'environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d'euros par an en Recherche & Développement, notamment dans des domaines clés de l'innovation tels qu…",
+      "latitude": 48.07043,
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-11-01T09:39:49Z",
+      "salary_is_predicted": "0",
+      "longitude": -2.21361,
+      "id": "5948895817",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4ODk1ODE3In0.1LQE7MhLy1rlOZRzJJD5_6ixHsoCpwxX2DWB8iwyLTE",
+      "redirect_url": "https://www.adzuna.fr/details/5948895817?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Saint-Nazaire, Loire-Atlantique"
+      },
+      "title": "Stage Assistant(e) Ingénieur Informatique Industrielle H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Chantiers de l'Atlantique"
+      },
+      "latitude": 47.27432,
+      "description": "Comment garantir la disponibilité et la sécurité des outils informatiques utilisés directement sur un chantier industriel ? Au sein de l'Administration de la Fabrication, vous rejoignez une équipe de 6 personnes et intervenez aux côtés du responsable du maintien en conditions opérationnelles (MCO) informatique. Dans cet environnement technique, vous contribuez au bon fonctionnement des équipements informatiques utilisés sur le terrain, tout en participant à l'automatisation de certaines opérati…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    },
+    {
+      "title": "MANIPULATEUR EN ELECTRORADIOLOGIE H/F",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "CHU DE LILLE"
+      },
+      "description": "MISSION PRINCIPALEPrise en charge (PEC) des patients pour toute demande d’imagerie dans le cadre des compétences définies par la fiche métier de MER et sur les équipements d’imagerie du secteur (Radiographie au lit, panoramique/cone beam, scanner, IRM, salle vasculaire, OARM et ampli de bloc) TACHES PRINCIPALESAssurer une prestation de qualité sur l'ensemble des différents secteurs de l’unitéS’adapter aux différents types de spécialités médicales dans le cadre de la polyvalence dans le service.…",
+      "latitude": 50.6389,
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "salary_is_predicted": "0",
+      "longitude": 3.01224,
+      "id": "5948614384",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4NjE0Mzg0In0.PR6rmu8FFwlsa-xMgc3xNdi0E9YbWgtpI_IJQFhbKWs",
+      "location": {
+        "display_name": "Lille, Nord",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Hauts-De-France",
+          "Nord",
+          "Lille"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948614384?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-11-01T05:08:32Z"
+    },
+    {
+      "category": {
+        "tag": "creative-design-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Création et Design"
+      },
+      "company": {
+        "display_name": "Naval Group",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "STAGE - Responsable UX/UI et Design d'information H/F",
+      "description": "Informations générales Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 s…",
+      "created": "2026-10-31T17:04:00Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODIxNzE4NSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.VtlUD6li6zVkEtJ2u3-VGd-pMvuijMKp9Z-zOaSUqeQ",
+      "location": {
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948217185?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "id": "5948217185"
+    },
+    {
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "description": "Les concessions autoroutières Eiffage en France, ce sont 3 300 collaborateurs et 2 560 kilomètres de réseau. Chez APRR et AREA nous préparons l’autoroute de demain, durable et respectueuse de son environnement. Une priorité : la santé et la sécurité de nos collaborateurs, pour lesquelles nous déployons de nombreuses innovations préventives. Nos équipes sont ainsi mobilisées, pour faire des déplacements de nos clients une expérience de voyage unique. Nous recherchons notre Stagiaire Assistant ch…",
+      "company": {
+        "display_name": "Taleo Social Sourcing",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage Assistant chef de projet informatique (F/H)",
+      "created": "2026-10-31T17:01:51Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "France"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948207473?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODIwNzQ3MyIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.ffEh1Y42FGUNhcnS0noXOAgce7IbwU8uI5Ce1PjvW_Y",
+      "id": "5948207473",
+      "salary_is_predicted": "0"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T17:01:47Z",
+      "id": "5948207334",
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "France",
+        "area": [
+          "France"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5948207334?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4MjA3MzM0In0.NgPz0fDziEkUJNR2Hd1A8e0TI6tW-Na4fhGLeeaK2xk",
+      "description": "Lieu : Rouen, France Construisons ensemble un avenir de confiance Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels qu…",
+      "title": "STAGE - Serveur NAS et synchronisation des machines de test - F/H",
+      "company": {
+        "display_name": "Thales",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      },
+      "contract_time": "full_time"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5948193955",
+      "longitude": 3.86085,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4MTkzOTU1In0.4fxpr02WLo3npqjeZgsSM4gWsd84Ce_JoSTC3P2cFmc",
+      "redirect_url": "https://www.adzuna.fr/details/5948193955?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Occitanie",
+          "Hérault",
+          "Montpellier"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Montpellier, Hérault"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T16:56:11Z",
+      "title": "stage 6 mois informatique et données clinique",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Sanofi"
+      },
+      "latitude": 43.63552,
+      "description": "Intitulé du poste : stage 6 mois science des données clinique Lieu : Montpellier ● A partir de : janvier 2027 À propos du poste En tant que stagiaire science des données clinique au sein de notre équipe de gestion de projet de la chaîne d'approvisionnement clinique, tu vas transformer les besoins de nos analystes en code pour structurer et présenter nos données. Prêt à commencer ? Notre équipe est basée à Montpellier et fait partie de la chaîne d'approvisionnement clinique, au sein de la foncti…",
+      "contract_time": "full_time",
+      "category": {
+        "tag": "unknown",
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "company": {
+        "display_name": "Ministère chargé des transports",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Chargé d'affaires*K-SE/EXPL",
+      "description": "Vos missions en quelques mots Génériques Sous l'autorité du chef du Service Exploitation : - Assiste le service exploitation pour assurer une bonne coordination avec l'ensemble des services en charge d'assurer la circulation aérien sur des terrains du SNA/SE, dans le domaine exploitation, - Facilite la coopération entre les agents des services extérieurs au siège du SNA/SE et les agents des subdivisions du service exploitation, - Suit et coordonne les mises à jour des MANEX, des lettres d'accor…",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4MTgwMzMwIn0.aoWEOcY-_6H2tRK5SrcqthGFE05iC3HCpFoLjV_zTjk",
+      "redirect_url": "https://www.adzuna.fr/details/5948180330?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "France",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France"
+        ]
+      },
+      "salary_is_predicted": "0",
+      "id": "5948180330",
+      "contract_type": "contract",
+      "created": "2026-10-31T16:53:32Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "category": {
+        "tag": "accounting-finance-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Comptabilité et Finance"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Ministère chargé des transports"
+      },
+      "title": "Gestionnaire finances*SG/SIR/CE/FIN",
+      "latitude": 45.72035,
+      "description": "Vos missions en quelques mots Chargé de voyages -Etablissement des ordres de mission -Réservation et validation des moyens de transport et d'hébergement pour l'ensemble des agents du service en liaison avec le prestataire retenu par la DGAC -Etablissement des états de frais au retour des missions -Engagement et liquidation des missions sur le logiciel de gestion « Diva 2.0/CHORUS-DT » -Gestion des ROP (Relevés d'Opérations) -Conseil et assistance pour l'organisation des déplacements professionn…",
+      "contract_type": "contract",
+      "created": "2026-10-31T16:45:24Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ4MTYxNDQxIn0.gS_tT-VFqF_Su-e2tARjthNrHl5uq4Wfvsv0BAhreXc",
+      "redirect_url": "https://www.adzuna.fr/details/5948161441?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Colombier-Saugnieu, Genas",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Auvergne-Rhône-Alpes",
+          "Rhône",
+          "Lyon",
+          "Genas",
+          "Colombier-Saugnieu"
+        ]
+      },
+      "salary_is_predicted": "0",
+      "longitude": 5.08666,
+      "id": "5948161441"
+    },
+    {
+      "title": "STAGE - Ingénieur Continuité d'Activité et Résilience SI (F/H)",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Dassault Systèmes"
+      },
+      "description": "En tant qu'organisateur de forums de recrutement, Talents Handicap accompagne de très nombreuses entreprises & organisations en France dans leurs recrutements de collaborateurs en situation de handicap. Participant actuellement à l'un de nos forums. L'entreprise Dassault Systèmes recherche actuellement des profils : Dassault Systèmes, l'entreprise de la 3DEXPERIENCE, est un « accélérateur de progrès humain ». Elle propose aux entreprises et aux particuliers des environnements virtuels collabora…",
+      "latitude": 48.84045,
+      "category": {
+        "label": "Unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown"
+      },
+      "salary_is_predicted": "0",
+      "id": "5948072600",
+      "longitude": 1.954423,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0ODA3MjYwMCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.IRxuogzBSd1UUdEpeqwyVh4p7nxnYQbqQ76gB-_N1bc",
+      "redirect_url": "https://www.adzuna.fr/details/5948072600?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Yvelines"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Yvelines, Ile-de-France"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T14:34:09Z"
+    },
+    {
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Industrie et Construction",
+        "tag": "trade-construction-jobs"
+      },
+      "description": "Nous recrutons pour un cabinet d'expertise comptable national aux outils informatiques modernes un Expert-Comptable ou Stagiaire Expert-Comptable F/H Le poste est à pourvoir en CDI le plus vite possible (en respectant votre préavis). Les missions de votre poste : - Intervenir sur des dossiers d'activités complexes à thématique ou problématique particulière tant sur votre portefeuille qu'en réassurance auprès de certains collaborateurs. - Encadrer les diverses délégations des travaux menés et at…",
+      "latitude": 43.29752,
+      "title": "Expert-comptable F/H",
+      "company": {
+        "display_name": "DUO VENANDI",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "created": "2026-10-31T13:06:54Z",
+      "contract_type": "permanent",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "display_name": "Pau, Pyrénées-Atlantiques",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Pyrénées-Atlantiques",
+          "Pau"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947986644?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3OTg2NjQ0In0.qdcZJHhSm3KDjybpj_6gNdt5S_-6AIqwdXevTb9Y0Uw",
+      "id": "5947986644",
+      "longitude": -0.37436,
+      "salary_is_predicted": "0"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T07:16:46Z",
+      "contract_type": "contract",
+      "id": "5947749541",
+      "longitude": 1.33264,
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5947749541?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "area": [
+          "France",
+          "Occitanie",
+          "Haute-Garonne",
+          "Toulouse",
+          "Toulouse 13e Canton"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Toulouse 13e Canton, Toulouse"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3NzQ5NTQxIn0.v838aIfMtaYxtKJuDHzsQJ8E_MLLNq5zaoKGH2xcnnM",
+      "description": "Description de l'entreprise À propos de Sopra Steria ​ Sopra Steria, acteur majeur de la Tech en Europe, avec 51 000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secte…",
+      "latitude": 43.61254,
+      "title": "Stage : Stage - Développeur(se) Front-end React.js - Cybersécurité - Toulouse",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Sopra-Steria"
+      },
+      "category": {
+        "tag": "graduate-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés"
+      }
+    },
+    {
+      "category": {
+        "tag": "graduate-jobs",
+        "label": "Emplois Diplômés",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "title": "Stage : Stage - Analyste VOC - Cybersécurité - Toulouse",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Sopra-Steria"
+      },
+      "latitude": 43.61254,
+      "description": "Description de l'entreprise À propos de Sopra Steria ​ Sopra Steria, acteur majeur de la Tech en Europe, avec 51 000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secte…",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3NzQ5NTQzIn0.RMaZrqPsA940NfVJwj8Dp1LLMOa9A8b32fLfcSPAHcU",
+      "redirect_url": "https://www.adzuna.fr/details/5947749543?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Toulouse 13e Canton, Toulouse",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Occitanie",
+          "Haute-Garonne",
+          "Toulouse",
+          "Toulouse 13e Canton"
+        ]
+      },
+      "salary_is_predicted": "0",
+      "longitude": 1.33264,
+      "id": "5947749543",
+      "contract_type": "contract",
+      "created": "2026-10-31T07:16:46Z",
+      "__CLASS__": "Adzuna::API::Response::Job"
+    },
+    {
+      "description": "Stagiaire ingénieur informatique – Plateforme de déploiement de logiciels F/H Détail de l'offre Informations générales Entité de rattachement Safran est un groupe international de haute technologie opérant dans les domaines de l'aéronautique (propulsion, équipements et intérieurs), de l'espace et de la défense. Sa mission : contribuer durablement à un monde plus sûr, où le transport aérien devient toujours plus respectueux de l'environnement, plus confortable et plus accessible. Implanté sur to…",
+      "title": "Stage : Stagiaire ingénieur informatique – Plateforme de déploiement de logiciels F/H",
+      "company": {
+        "display_name": "Safran",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "category": {
+        "tag": "graduate-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés"
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T07:16:40Z",
+      "contract_type": "contract",
+      "id": "5947749430",
+      "salary_is_predicted": "0",
+      "redirect_url": "https://www.adzuna.fr/details/5947749430?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "France",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0Nzc0OTQzMCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.WLokIH_BzZsjLNBojFS250zDe2XW2FtaW6PutgI8dEw"
+    },
+    {
+      "created": "2026-10-31T07:16:26Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.fr/details/5947749201?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Paris, Ile-de-France",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Paris"
+        ]
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0Nzc0OTIwMSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.ZItfPUSu73tsYkkPzDRQctcqTk5dlmQ4nYkwXFFnMNQ",
+      "longitude": 2.344631,
+      "id": "5947749201",
+      "salary_is_predicted": "0",
+      "category": {
+        "tag": "graduate-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés"
+      },
+      "description": "Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 sites en France et dans …",
+      "latitude": 48.863839,
+      "title": "Stage : Stage - Auditeur Interne H/F H/F",
+      "company": {
+        "display_name": "Naval Group",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    },
+    {
+      "latitude": 47.75007,
+      "description": "Organisation NAVAL GROUP Acteur international du naval de défense, Naval Group est partenaire des États dans la maîtrise de leur souveraineté maritime. Grâce à des savoir-faire et des moyens industriels exceptionnels, il conçoit, réalise, intègre, maintient en service et modernise des sous-marins, des navires de surface et des drones ainsi que leurs systèmes, leurs armes et leurs équipements, jusqu'à la déconstruction. UN ENVIRONNEMENT DE TRAVAIL POSITIF Implantés sur 9 sites en France et dans …",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Naval Group"
+      },
+      "title": "Stage : STAGE – Développeur Informatique - H/F",
+      "category": {
+        "tag": "graduate-jobs",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés"
+      },
+      "longitude": -3.36629,
+      "id": "5947749214",
+      "salary_is_predicted": "0",
+      "location": {
+        "display_name": "Lanester, Lorient",
+        "area": [
+          "France",
+          "Bretagne",
+          "Morbihan",
+          "Lorient",
+          "Lanester"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947749214?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0Nzc0OTIxNCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.KuTVGmMMfpY_5FOiJxH-F4g4toCSl0ZOfXnyuBhDGK8",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "created": "2026-10-31T07:16:26Z",
+      "contract_type": "contract"
+    },
+    {
+      "created": "2026-10-31T07:15:59Z",
+      "contract_type": "contract",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Nanterre",
+          "Courbevoie",
+          "La Défense"
+        ],
+        "display_name": "La Défense, Courbevoie"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947748574?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0Nzc0ODU3NCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.hY-f-8dU_vGN09J6lLVuSp0Q_HmGMuQnOUs76NL4Rvo",
+      "longitude": 2.25651,
+      "id": "5947748574",
+      "salary_is_predicted": "0",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés",
+        "tag": "graduate-jobs"
+      },
+      "description": "Description de l'offre Environnement de travail: Vous serez intégré au sein de la direction technique d'Enedis à l'équipe de contrôle-commande des postes sources. Vous serez en interaction avec les acteurs projet des postes sources actuels et futurs ainsi qu'avec les équipes de conception des systèmes de conduite distant. Missions confiées : - S'approprier le contenu des normes IEC 61850 dédiées à la configuration et du processus de configuration actuel des postes sources du réseau électrique -…",
+      "latitude": 48.89683,
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Enedis"
+      },
+      "title": "Stage : Stage ingénieur - informatique industrielle F/H (2026-185467)"
+    },
+    {
+      "created": "2026-10-31T06:59:15Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0NzcwNDc4OCIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.8H4x5lZWTPulBtp_aXMtB7X96Ywa-FVnRRngNcDiuHs",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire",
+          "Montoir-de-Bretagne"
+        ],
+        "display_name": "Montoir-de-Bretagne, Saint-Nazaire"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947704788?utm_medium=api&utm_source=7d6ca879",
+      "salary_is_predicted": "0",
+      "longitude": -2.18823,
+      "id": "5947704788",
+      "contract_time": "full_time",
+      "category": {
+        "tag": "it-jobs",
+        "label": "Emplois Informatique",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Mistras France"
+      },
+      "title": "Stage Ingénieur Informatique",
+      "description": "Dans le cadre de notre transformation digitale et du développement de nos outils internes, nous recherchons un(e) stagiaire Ingénieur Informatique. Vos missions Vous interviendrez sur des projets liés à la digitalisation de nos activités Qualité Sécurité Environnement (QSE) : - Développement et amélioration d'outils internes (applications QSE, outils de reporting, automatisation de process) - Participation à la conception de solutions logicielles adaptées aux besoins des équipes QSE - Analyse d…",
+      "latitude": 47.31752
+    },
+    {
+      "category": {
+        "tag": "sales-jobs",
+        "label": "Emplois Vente",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      },
+      "description": "Le Laboratoire Science et Nature, créé dès 1972 (à 30 minutes de Cholet), est le premier fabricant français de produits écologiques et biologiques (cosmétique, bien-être et détergence), qui a permis de mettre en application une vision novatrice depuis ses débuts : utiliser les bienfaits de la nature pour le bien-être de chacun. 250 salariés et plus de 1200 conseiller(ères) œuvrent chaque jour pour apporter à leurs clients des produits de qualité dans le respect de la nature et de l’environnemen…",
+      "latitude": 46.93729,
+      "company": {
+        "display_name": "Laboratoire Science Et Nature",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stagiaire Technicien informatique systèmes et réseaux (H/F)",
+      "created": "2026-10-31T06:51:32Z",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Nouvelle-Aquitaine",
+          "Deux-Sèvres",
+          "Bressuire",
+          "Mauléon",
+          "Nueil-les-Aubiers"
+        ],
+        "display_name": "Nueil-les-Aubiers, Mauléon"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947692164?utm_medium=api&utm_source=7d6ca879",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3NjkyMTY0In0.UPHI2E_IaeFhttK__fKQC7BhcXz6kMH3ppQZMbaz1Mk",
+      "longitude": -0.59057,
+      "id": "5947692164",
+      "salary_is_predicted": "0"
+    },
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-10-31T06:47:34Z",
+      "salary_is_predicted": "0",
+      "longitude": -2.21361,
+      "id": "5947688526",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3Njg4NTI2In0.ThUsBpzKLfBszRVid2p4FeumuxWtPIlQ5PwmhchagwE",
+      "location": {
+        "display_name": "Montoir-de-Bretagne, Saint-Nazaire",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique",
+          "Saint-Nazaire",
+          "Montoir-de-Bretagne"
+        ]
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947688526?utm_medium=api&utm_source=7d6ca879",
+      "company": {
+        "display_name": "Chantiers de l'Atlantique",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage Ingénieur(e) Machine Learning et Informatique H/F",
+      "latitude": 47.27432,
+      "description": "Montez à bord et venez découvrir l'univers de Chantiers de l'Atlantique, acteur incontournable de l'industrie maritime mondiale. Basé à Saint-Nazaire , au bord de l'Océan Atlantique, notre site industriel d'une centaine d'hectares, regroupe quotidiennement jusqu'à 10 000 personnes : nos 4 000 collaborateurs ainsi que notre réseau de coréalisateurs, fournisseurs, clients et autres partenaires. Ensemble , nous concevons, construisons et mettons en service des réalisations uniques. Engagé dans une…",
+      "category": {
+        "tag": "engineering-jobs",
+        "label": "Emplois Ingénierie",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "EDF"
+      },
+      "title": "Stage ingénieur - informatique industrielle F/H",
+      "description": "Description du poste Famille professionnelle / Métier AUTOMATISMES ELECTRONIQUE INFO INDUST - Ingénierie de conception Intitulé du poste Stage ingénieur - informatique industrielle F/H Type de contrat Stage Description de la mission Environnement de travail: Vous serez intégré au sein de la direction technique d'Enedis à l'équipe de contrôle-commande des postes sources. Vous serez en interaction avec les acteurs projet des postes sources actuels et futurs ainsi qu'avec les équipes de conception…",
+      "latitude": 48.89683,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Emplois Diplômés",
+        "tag": "graduate-jobs"
+      },
+      "salary_is_predicted": "0",
+      "longitude": 2.25651,
+      "id": "5947464532",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0NzQ2NDUzMiIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.hxMJwY2HztS6cPVQmVAm1qYo0S8fnfLoBuj3gulsAnE",
+      "location": {
+        "area": [
+          "France",
+          "Ile-de-France",
+          "Hauts-de-Seine",
+          "Nanterre",
+          "Courbevoie"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Courbevoie, Nanterre"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947464532?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-10-31T03:22:28Z"
+    },
+    {
+      "salary_is_predicted": "0",
+      "id": "5947445075",
+      "longitude": -1.542898,
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk0NzQ0NTA3NSIsInMiOiJacjhxOFR6WjhSR3R2TVRTaGNqQWpnIn0.yzNz8JNuV0XACuQRpT2WdWzmWCPYUfRJOwt7dYVgWL0",
+      "location": {
+        "area": [
+          "France",
+          "Pays de la Loire",
+          "Loire-Atlantique"
+        ],
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "display_name": "Loire-Atlantique, Pays de la Loire"
+      },
+      "redirect_url": "https://www.adzuna.fr/details/5947445075?utm_medium=api&utm_source=7d6ca879",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-10-31T03:20:47Z",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Chantiers de l'Atlantique"
+      },
+      "title": "Stage Ingénieur(e) Machine Learning et Informatique H/F",
+      "description": "Montez à bord et venez découvrir l'univers de Chantiers de l'Atlantique, acteur incontournable de l'industrie maritime mondiale. Basé à Saint-Nazaire , au bord de l'Océan Atlantique, notre site industriel d'une centaine d'hectares, regroupe quotidiennement jusqu'à 10 000 personnes : nos 4 000 collaborateurs ainsi que notre réseau de coréalisateurs, fournisseurs, clients et autres partenaires. Ensemble , nous concevons, construisons et mettons en service des réalisations uniques. Engagé dans une…",
+      "latitude": 47.409153,
+      "category": {
+        "tag": "energy-oil-gas-jobs",
+        "label": "Emplois Énergie, pétrole et gaz",
+        "__CLASS__": "Adzuna::API::Response::Category"
+      }
+    },
+    {
+      "salary_is_predicted": "0",
+      "longitude": 1.13894,
+      "id": "5947395490",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiWnI4cThUelo4Ukd0dk1UU2hjakFqZyIsImkiOiI1OTQ3Mzk1NDkwIn0.OHneFsvwjeZicIcxTbo7Ps70rjEe2PjPFfntSEX22Ps",
+      "redirect_url": "https://www.adzuna.fr/details/5947395490?utm_medium=api&utm_source=7d6ca879",
+      "location": {
+        "display_name": "Haute-Garonne, Occitanie",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "France",
+          "Occitanie",
+          "Haute-Garonne"
+        ]
+      },
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "contract_type": "contract",
+      "created": "2026-10-31T03:04:04Z",
+      "company": {
+        "display_name": "Forums Talents Handicap",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      },
+      "title": "Stage - Développeur(se) Front-end React.js - Cybersécurité - Toulouse",
+      "latitude": 43.4082,
+      "description": "Description de l'entreprise À propos de Sopra Steria Sopra Steria, acteur majeur de la Tech en Europe, avec 51000 collaborateurs dans près de 30 pays, est reconnu pour ses activités de conseil, de services et solutions numériques. Il aide ses clients à mener leur transformation digitale et à obtenir des bénéfices concrets et durables. Le Groupe apporte une réponse globale aux enjeux de compétitivité des grandes entreprises et organisations, en combinant une connaissance approfondie des secteurs…",
+      "category": {
+        "tag": "unknown",
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "label": "Unknown"
+      }
+    }
+  ]
+}
