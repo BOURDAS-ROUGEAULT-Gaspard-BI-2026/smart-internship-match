@@ -1,15 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Pipeline sanity check</title></head>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche de stage</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --text-1: #0b0b0b;
+    --text-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --series-1: #2a78d6;   /* atouts / scores */
+    --series-2: #eb6834;   /* lacunes */
+    --track: #cde2fb;
+    --ord-1: #86b6ef; --ord-2: #3987e5; --ord-3: #256abf; --ord-4: #184f95;
+    --good: #0ca30c; --warning: #fab219; --critical: #d03b3b;
+    --good-text: #006300;
+    --link: #1c5cab;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0d0d; --surface: #1a1a19;
+      --text-1: #f0efec; --text-2: #c3c2b7; --muted: #898781;
+      --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+      --series-1: #3987e5; --series-2: #d95926; --track: #1c3350;
+      --ord-1: #184f95; --ord-2: #256abf; --ord-3: #3987e5; --ord-4: #6da7ec;
+      --good-text: #0ca30c; --link: #86b6ef;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19;
+    --text-1: #f0efec; --text-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5; --series-2: #d95926; --track: #1c3350;
+    --ord-1: #184f95; --ord-2: #256abf; --ord-3: #3987e5; --ord-4: #6da7ec;
+    --good-text: #0ca30c; --link: #86b6ef;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--text-1);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+  a { color: var(--link); }
+  h1 { font-size: 26px; margin: 0 0 4px; font-weight: 650; }
+  h2 { font-size: 19px; margin: 0 0 4px; font-weight: 620; }
+  h3 { font-size: 15px; margin: 0 0 2px; font-weight: 600; }
+  .sub, .why { color: var(--text-2); margin: 0; }
+  .why { font-size: 13px; margin-bottom: 14px; }
+  header { margin-bottom: 28px; }
+  section { margin-top: 40px; }
+  .section-head { margin-bottom: 16px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px;
+  }
+  .hero { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline; }
+  .hero-value { font-size: 56px; font-weight: 650; line-height: 1; }
+  .hero-text { max-width: 560px; color: var(--text-2); }
+  .hero-text strong { color: var(--text-1); }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .tile .label { color: var(--text-2); font-size: 13px; }
+  .tile .value { font-size: 28px; font-weight: 620; line-height: 1.2; margin-top: 2px; }
+  .tile .note { color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; margin-top: 6px; color: var(--text-2); }
+  .status .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .status .icon { font-size: 11px; font-weight: 700; color: var(--text-1); }
+
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
+
+  /* Horizontal bars: <=24px thick, 4px rounded data-end, square at baseline */
+  .bars { display: grid; gap: 6px; }
+  .bar-row { display: grid; grid-template-columns: minmax(90px, 38%) 1fr; gap: 10px; align-items: center; font-size: 13px; }
+  .bar-label { color: var(--text-2); overflow-wrap: anywhere; text-align: right; }
+  .bar-track { display: flex; align-items: center; gap: 6px; min-height: 26px; border-left: 1px solid var(--axis); }
+  .bar { height: 18px; border-radius: 0 4px 4px 0; min-width: 2px; cursor: default; }
+  .bar-value { color: var(--text-1); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar-value small { color: var(--muted); }
+
+  /* Histogram columns */
+  .hist { display: flex; align-items: flex-end; gap: 2px; height: 160px; border-bottom: 1px solid var(--axis); padding-top: 18px; }
+  .col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; }
+  .col-bar { width: 100%; max-width: 24px; background: var(--series-1); border-radius: 4px 4px 0 0; }
+  .col-val { font-size: 12px; color: var(--text-1); margin-bottom: 2px; font-variant-numeric: tabular-nums; }
+  .hist-axis { display: flex; gap: 2px; font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .hist-axis span { flex: 1; text-align: center; font-variant-numeric: tabular-nums; }
+
+  /* Table */
+  .filters { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 12px; font-size: 14px; }
+  .filters input[type=search] {
+    flex: 1 1 220px; min-width: 0; padding: 7px 10px; border-radius: 6px;
+    border: 1px solid var(--axis); background: var(--surface); color: var(--text-1); font: inherit;
+  }
+  .filters label { display: inline-flex; gap: 6px; align-items: center; color: var(--text-2); }
+  .count { color: var(--muted); font-size: 13px; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+  th { color: var(--text-2); font-weight: 600; white-space: nowrap; position: sticky; top: 0; background: var(--surface); }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  td:nth-child(3) { min-width: 220px; }
+  .offer-title { font-weight: 560; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip { border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px; font-size: 12px; white-space: nowrap; }
+  .chip.ok::before { content: "✓ "; color: var(--good-text); font-weight: 700; }
+  .chip.gap::before { content: "+ "; color: var(--muted); font-weight: 700; }
+  .meter { width: 72px; height: 6px; border-radius: 3px; background: var(--track); margin-top: 4px; overflow: hidden; }
+  .meter > div { height: 100%; background: var(--series-1); border-radius: 3px; }
+  .tag { display: inline-block; font-size: 11px; color: var(--text-2); border: 1px dashed var(--axis); border-radius: 4px; padding: 0 6px; margin-top: 4px; }
+  .empty { color: var(--text-2); padding: 18px; text-align: center; }
+  .more {
+    margin-top: 10px; padding: 7px 14px; border-radius: 6px; cursor: pointer; font: inherit; font-size: 14px;
+    border: 1px solid var(--axis); background: var(--surface); color: var(--text-1);
+  }
+
+  details { margin-top: 12px; color: var(--text-2); font-size: 13px; }
+  summary { cursor: pointer; color: var(--text-1); }
+  code { font-size: 12px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 12px; }
+
+  #tooltip {
+    position: fixed; pointer-events: none; z-index: 10; display: none;
+    background: var(--surface); color: var(--text-1); border: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12); border-radius: 8px; padding: 8px 10px;
+    font-size: 12px; max-width: 260px;
+  }
+  #tooltip b { display: block; margin-bottom: 2px; }
+  .hit { outline: none; }
+  .hit:focus-visible { outline: 2px solid var(--series-1); outline-offset: 2px; }
+</style>
+</head>
 <body>
-  <h1>Pipeline sanity check — not your dashboard</h1>
-  <p>This just confirms your pipeline produced real, well-formed data. Your actual dashboard is a separate file you build yourself — see below.</p>
-  <pre id="out">Loading...</pre>
+<main>
+  <header>
+    <h1>Recherche de stage : tableau de bord</h1>
+    <p class="sub" id="freshness">Chargement des données…</p>
+  </header>
+
+  <!-- 1. La décision principale -->
+  <div class="card hero" id="hero"></div>
+
+  <section>
+    <div class="section-head">
+      <h2>Où postuler en premier</h2>
+      <p class="why">Offres classées par score de correspondance avec mon profil. Sert à choisir les prochaines candidatures et ce qu'il faut mettre en avant dans chacune.</p>
+    </div>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Filtrer par poste, entreprise, ville ou compétence" aria-label="Filtrer les offres">
+      <label><input type="checkbox" id="only-eval"> Seulement les offres évaluables</label>
+      <label><input type="checkbox" id="hide-noise" checked> Masquer doublons et non-stages</label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Score</th><th>Couverture</th><th>Offre</th><th>Compétences que j'ai</th><th>Compétences à acquérir</th><th>Publiée</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <button type="button" id="more" class="more" hidden></button>
+    <details>
+      <summary>Comment lire le score</summary>
+      <p><strong>Couverture</strong> : part des compétences demandées par l'offre que je possède.
+      <strong>Score</strong> : somme de mes niveaux (sur 5) pour ces compétences, divisée par le nombre de compétences demandées + 2.
+      Le « + 2 » évite qu'une offre dont une seule compétence a été extraite obtienne un score parfait : plus l'offre donne d'information, plus le score est fiable.
+      Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score de 0 ne veut pas dire « mauvais match ».</p>
+    </details>
+  </section>
+
+  <!-- 2. Efficacité de la recherche -->
+  <section>
+    <div class="section-head">
+      <h2>Efficacité de la recherche</h2>
+      <p class="why">Ce que le marché demande par rapport à ce que je sais faire.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Compétences manquantes les plus demandées</h3>
+        <p class="why">Nombre d'offres qui les demandent. Sert à choisir quoi apprendre ensuite.</p>
+        <div class="bars" id="gaps-chart" role="img"></div>
+      </div>
+      <div class="card">
+        <h3>Mes compétences les plus demandées</h3>
+        <p class="why">Nombre d'offres qui les demandent, avec mon niveau. Sert à choisir quoi mettre en avant dans le CV.</p>
+        <div class="bars" id="matched-chart" role="img"></div>
+      </div>
+      <div class="card">
+        <h3>Répartition des scores</h3>
+        <p class="why">Nombre d'offres évaluables par tranche de score. Montre si la recherche ramène des offres adaptées ou surtout du bruit.</p>
+        <div id="hist-chart" role="img"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Santé du pipeline -->
+  <section>
+    <div class="section-head">
+      <h2>Santé du pipeline</h2>
+      <p class="why">Qualité des données collectées. À vérifier avant de faire confiance au classement.</p>
+    </div>
+    <div class="tiles" id="pipeline-tiles"></div>
+  </section>
+
+  <!-- 4. Résultats -->
+  <section>
+    <div class="section-head">
+      <h2>Suivi des candidatures</h2>
+      <p class="why">Résultats réels de la recherche, saisis à la main dans <code>docs/data/applications.csv</code>.</p>
+    </div>
+    <div class="tiles" id="outcome-tiles"></div>
+    <div class="card" style="margin-top:12px">
+      <h3>Entonnoir des candidatures</h3>
+      <p class="why">Combien de candidatures passent chaque étape. Montre à quelle étape ça bloque.</p>
+      <div class="bars" id="funnel-chart" role="img"></div>
+    </div>
+  </section>
+
+  <footer>
+    Offres : <a href="https://www.adzuna.fr" rel="noopener">Jobs by Adzuna</a>. Seules les sources publiables sont affichées ici.
+    Compétences extraites par IA (Ollama, en local) : elles peuvent contenir des erreurs.
+  </footer>
+</main>
+<div id="tooltip" role="tooltip"></div>
+
 <script>
-fetch('data/matches.json')
-  .then(r => r.json())
-  .then(data => { document.getElementById('out').textContent = JSON.stringify(data, null, 2); })
-  .catch(err => { document.getElementById('out').textContent = 'Could not load data: ' + err; });
+"use strict";
+const STALE_DAYS = 8;          // le workflow tourne chaque semaine
+const MIN_COVERAGE = 0.3;      // même seuil que draft_cv.py
+const PENDING_ALERT_DAYS = 10; // contrôle de suivi : pas de réponse après 10 jours
+const PAGE_SIZE = 15;
+let showAll = false;
+
+const $ = (id) => document.getElementById(id);
+const fmtNum = (x, d = 2) => x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const fmtPct = (x) => Math.round(x * 100) + " %";
+const fmtDate = (s) => {
+  const d = new Date(s);
+  return isNaN(d) ? "" : d.toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+};
+const daysSince = (s) => (Date.now() - new Date(s).getTime()) / 86400000;
+const safeUrl = (u) => (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null;
+const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+function el(tag, attrs = {}, ...children) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") n.className = v;
+    else if (k === "style") n.style.cssText = v;
+    else n.setAttribute(k, v);
+  }
+  for (const c of children.flat()) if (c != null) n.append(c instanceof Node ? c : String(c));
+  return n;
+}
+
+/* ---------- Tooltip (hover + focus clavier) ---------- */
+const tip = $("tooltip");
+function attachTip(node, title, body) {
+  node.classList.add("hit");
+  node.tabIndex = 0;
+  node.setAttribute("aria-label", title + " : " + body);
+  const show = (x, y) => {
+    tip.replaceChildren(el("b", {}, title), body);
+    tip.style.display = "block";
+    const r = tip.getBoundingClientRect();
+    tip.style.left = Math.min(x + 12, window.innerWidth - r.width - 8) + "px";
+    tip.style.top = Math.max(8, y - r.height - 12) + "px";
+  };
+  node.addEventListener("mousemove", (e) => show(e.clientX, e.clientY));
+  node.addEventListener("mouseleave", () => (tip.style.display = "none"));
+  node.addEventListener("focus", () => { const r = node.getBoundingClientRect(); show(r.right, r.top); });
+  node.addEventListener("blur", () => (tip.style.display = "none"));
+}
+
+/* ---------- Composants ---------- */
+function statusLine(kind, text) {
+  const colors = { good: "var(--good)", warning: "var(--warning)", critical: "var(--critical)" };
+  const icons = { good: "✓", warning: "!", critical: "✕" };
+  return el("div", { class: "status" },
+    el("span", { class: "dot", style: `background:${colors[kind]}` }),
+    el("span", { class: "icon", "aria-hidden": "true" }, icons[kind]),
+    text);
+}
+function tile(label, value, note, status) {
+  return el("div", { class: "card tile" },
+    el("div", { class: "label" }, label),
+    el("div", { class: "value" }, value),
+    note ? el("div", { class: "note" }, note) : null,
+    status || null);
+}
+function barChart(container, items, { color, valueLabel, tipBody, emptyText }) {
+  container.replaceChildren();
+  if (!items.length) { container.append(el("p", { class: "empty" }, emptyText)); return; }
+  const max = Math.max(...items.map((i) => i.value), 1);
+  container.setAttribute("aria-label", items.map((i) => `${i.label} : ${i.value}`).join(", "));
+  for (const it of items) {
+    const bar = el("div", { class: "bar", style: `width:${(it.value / max) * 80}%;background:${it.color || color}` });
+    attachTip(bar, it.label, tipBody(it));
+    container.append(el("div", { class: "bar-row" },
+      el("div", { class: "bar-label" }, it.label),
+      el("div", { class: "bar-track" }, bar, el("span", { class: "bar-value" }, valueLabel(it)))));
+  }
+}
+
+/* ---------- Qualité des données (calculée ici, sans modifier le pipeline) ---------- */
+function annotate(offers) {
+  const seen = new Set();
+  for (const o of offers) {
+    o.evaluable = (o.matched.length + o.gaps.length) > 0;
+    o.isInternship = /stag|intern/i.test(o.title || "");
+    const key = norm(o.title).replace(/^stage\s*:\s*/, "").replace(/[^a-z0-9]+/g, " ").trim() + "|" + norm(o.company).trim();
+    o.duplicate = seen.has(key);
+    seen.add(key);
+  }
+}
+
+/* ---------- Rendu ---------- */
+function renderHeader(data) {
+  const age = daysSince(data.generated_at);
+  const p = $("freshness");
+  p.replaceChildren(
+    `Données calculées le ${new Date(data.generated_at).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })} · ${data.n_offers} offres · source : `,
+    el("a", { href: "https://www.adzuna.fr", rel: "noopener" }, "Jobs by Adzuna"));
+  return age;
+}
+
+function renderHero(offers) {
+  const prio = offers.filter((o) => o.evaluable && !o.duplicate && o.isInternship && o.coverage >= MIN_COVERAGE);
+  const evaluable = offers.filter((o) => o.evaluable).length;
+  $("hero").replaceChildren(
+    el("div", { class: "hero-value" }, prio.length),
+    el("div", { class: "hero-text" },
+      el("strong", {}, prio.length === 1 ? "offre de stage à prioriser" : "offres de stage à prioriser"),
+      el("br"),
+      `Je possède au moins ${fmtPct(MIN_COVERAGE)} des compétences demandées. Seules ${evaluable} offres sur ${offers.length} ont pu être évaluées : le classement porte sur peu d'offres.`));
+}
+
+function renderTable(offers) {
+  const q = norm($("q").value.trim());
+  const onlyEval = $("only-eval").checked;
+  const hideNoise = $("hide-noise").checked;
+  const rows = offers.filter((o) => {
+    if (onlyEval && !o.evaluable) return false;
+    if (hideNoise && (o.duplicate || !o.isInternship)) return false;
+    if (!q) return true;
+    return norm([o.title, o.company, o.location, ...o.matched, ...o.gaps].join(" ")).includes(q);
+  });
+  const plural = rows.length > 1 ? "s" : "";
+  $("count").textContent = `${rows.length} offre${plural} correspondante${plural}`;
+  const tbody = $("rows");
+  tbody.replaceChildren();
+  const more = $("more");
+  more.hidden = showAll || rows.length <= PAGE_SIZE;
+  more.textContent = `Afficher les ${rows.length} offres`;
+  if (!rows.length) {
+    tbody.append(el("tr", {}, el("td", { colspan: 6, class: "empty" }, "Aucune offre ne correspond à ces filtres.")));
+    return;
+  }
+  for (const o of showAll ? rows : rows.slice(0, PAGE_SIZE)) {
+    const url = safeUrl(o.url);
+    const title = url ? el("a", { href: url, target: "_blank", rel: "noopener", class: "offer-title" }, o.title) : el("span", { class: "offer-title" }, o.title);
+    const flags = [];
+    if (!o.evaluable) flags.push(el("span", { class: "tag" }, "non évaluable"));
+    if (o.duplicate) flags.push(el("span", { class: "tag" }, "doublon"));
+    if (!o.isInternship) flags.push(el("span", { class: "tag" }, "pas un stage ?"));
+    tbody.append(el("tr", {},
+      el("td", { class: "num" }, o.evaluable ? fmtNum(o.score) : "—"),
+      el("td", { class: "num" }, o.evaluable ? [fmtPct(o.coverage), el("div", { class: "meter", "aria-hidden": "true" }, el("div", { style: `width:${o.coverage * 100}%` }))] : "—"),
+      el("td", {}, title, el("div", { class: "meta" }, [o.company, o.location].filter(Boolean).join(" · ")),
+        o.experience_required ? el("div", { class: "meta" }, "Exigence : " + o.experience_required) : null,
+        o.compensation_mentioned ? el("div", { class: "meta" }, "Rémunération : " + o.compensation_mentioned) : null,
+        flags.length ? el("div", { class: "chips" }, flags) : null),
+      el("td", {}, el("div", { class: "chips" }, o.matched.map((s) => el("span", { class: "chip ok" }, s)))),
+      el("td", {}, el("div", { class: "chips" }, o.gaps.map((s) => el("span", { class: "chip gap" }, s)))),
+      el("td", { class: "num" }, fmtDate(o.date_posted))));
+  }
+}
+
+function renderCharts(data, offers) {
+  const evaluable = offers.filter((o) => o.evaluable);
+  barChart($("gaps-chart"), data.top_skill_gaps.slice(0, 8).map((g) => ({ label: g.skill, value: g.count })), {
+    color: "var(--series-2)",
+    valueLabel: (it) => it.value,
+    tipBody: (it) => `Demandée par ${it.value} offre${it.value > 1 ? "s" : ""} sur ${evaluable.length} évaluables.`,
+    emptyText: "Aucune compétence manquante relevée.",
+  });
+  barChart($("matched-chart"), data.top_matched_skills.slice(0, 8).map((m) => ({ label: m.skill, value: m.count, level: m.level })), {
+    color: "var(--series-1)",
+    valueLabel: (it) => [String(it.value), el("small", {}, ` · niveau ${it.level}/5`)],
+    tipBody: (it) => `Demandée par ${it.value} offre${it.value > 1 ? "s" : ""}. Mon niveau : ${it.level}/5.`,
+    emptyText: "Aucune de mes compétences n'a été retrouvée dans les offres.",
+  });
+
+  // Histogramme : tranches de 0,1 sur les offres évaluables
+  const hist = $("hist-chart");
+  hist.replaceChildren();
+  if (!evaluable.length) { hist.append(el("p", { class: "empty" }, "Aucune offre évaluable.")); return; }
+  const step = 0.1, nb = Math.max(1, Math.ceil((Math.max(...evaluable.map((o) => o.score)) + 1e-9) / step));
+  const bins = Array.from({ length: nb }, (_, i) => ({ lo: i * step, hi: (i + 1) * step, n: 0 }));
+  for (const o of evaluable) bins[Math.min(nb - 1, Math.floor(o.score / step))].n++;
+  const max = Math.max(...bins.map((b) => b.n), 1);
+  const cols = el("div", { class: "hist" });
+  const axis = el("div", { class: "hist-axis", "aria-hidden": "true" });
+  hist.setAttribute("aria-label", bins.map((b) => `${fmtNum(b.lo, 1)} à ${fmtNum(b.hi, 1)} : ${b.n}`).join(", "));
+  for (const b of bins) {
+    const bar = el("div", { class: "col-bar", style: `height:${(b.n / max) * 85}%` });
+    if (b.n) attachTip(bar, `Score de ${fmtNum(b.lo, 1)} à ${fmtNum(b.hi, 1)}`, `${b.n} offre${b.n > 1 ? "s" : ""}`);
+    cols.append(el("div", { class: "col" }, b.n ? el("span", { class: "col-val" }, b.n) : null, bar));
+    axis.append(el("span", {}, fmtNum(b.lo, 1)));
+  }
+  hist.append(cols, axis);
+}
+
+function renderPipeline(data, offers, ageDays) {
+  const n = offers.length;
+  const evalN = offers.filter((o) => o.evaluable).length;
+  const dup = offers.filter((o) => o.duplicate).length;
+  const notStage = offers.filter((o) => !o.isInternship).length;
+  const extractRate = n ? evalN / n : 0;
+  $("pipeline-tiles").replaceChildren(
+    tile("Offres collectées", n, "Après filtrage des sources non publiables"),
+    tile("Offres avec compétences extraites", fmtPct(extractRate), `${evalN} sur ${n}`,
+      extractRate >= 0.7 ? statusLine("good", "Correct")
+        : statusLine(extractRate >= 0.4 ? "warning" : "critical", "Descriptions Adzuna tronquées")),
+    tile("Doublons", dup, "Même titre et même entreprise",
+      dup ? statusLine("warning", "À dédoublonner") : statusLine("good", "Aucun")),
+    tile("Offres qui ne sont pas des stages", notStage, "Sans « stage », « stagiaire » ni « intern » dans le titre",
+      notStage ? statusLine("warning", "Recherche trop large") : statusLine("good", "Aucune")),
+    tile("Rémunération mentionnée", data.n_offers_with_compensation, `sur ${n} offres`),
+    tile("Âge des données", Math.floor(ageDays) + " j", "Le workflow tourne chaque lundi",
+      ageDays > STALE_DAYS ? statusLine("warning", "Données plus vieilles qu'une semaine") : statusLine("good", "À jour")));
+}
+
+/* ---------- Candidatures (CSV saisi à la main) ---------- */
+function parseCsv(text) {
+  const rows = []; let row = [], cell = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) {
+      if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+      else if (c === '"') q = false;
+      else cell += c;
+    } else if (c === '"') q = true;
+    else if (c === ",") { row.push(cell); cell = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && text[i + 1] === "\n") i++;
+      row.push(cell); cell = "";
+      if (row.some((x) => x.trim())) rows.push(row);
+      row = [];
+    } else cell += c;
+  }
+  row.push(cell); if (row.some((x) => x.trim())) rows.push(row);
+  if (!rows.length) return [];
+  const head = rows[0].map((h) => h.trim());
+  return rows.slice(1).map((r) => Object.fromEntries(head.map((h, i) => [h, (r[i] || "").trim()])));
+}
+
+function renderOutcomes(apps) {
+  const sent = apps.length;
+  const st = (a) => norm(a.statut);
+  const answered = apps.filter((a) => st(a) && st(a) !== "envoyee");
+  const interviews = apps.filter((a) => ["entretien", "offre"].includes(st(a)));
+  const offersGot = apps.filter((a) => st(a) === "offre");
+  const pending = apps.filter((a) => st(a) === "envoyee" && a.date_envoi && daysSince(a.date_envoi) > PENDING_ALERT_DAYS);
+
+  $("outcome-tiles").replaceChildren(
+    tile("Candidatures envoyées", sent, sent ? null : "Aucune saisie pour l'instant"),
+    tile("Taux de réponse", sent ? fmtPct(answered.length / sent) : "—", sent ? `${answered.length} réponse${answered.length > 1 ? "s" : ""}, refus compris` : null),
+    tile("Entretiens obtenus", interviews.length, sent ? `${fmtPct(interviews.length / sent)} des candidatures` : null),
+    tile(`Sans réponse depuis plus de ${PENDING_ALERT_DAYS} jours`, pending.length,
+      pending.length ? pending.map((a) => a.entreprise).filter(Boolean).join(", ") : null,
+      sent ? (pending.length ? statusLine("warning", "Relancer") : statusLine("good", "Rien à relancer")) : null));
+
+  const steps = [
+    { label: "Envoyées", value: sent, color: "var(--ord-1)" },
+    { label: "Réponses", value: answered.length, color: "var(--ord-2)" },
+    { label: "Entretiens", value: interviews.length, color: "var(--ord-3)" },
+    { label: "Offres de stage", value: offersGot.length, color: "var(--ord-4)" },
+  ];
+  barChart($("funnel-chart"), sent ? steps : [], {
+    valueLabel: (it) => it.value,
+    tipBody: (it) => `${it.value} candidature${it.value > 1 ? "s" : ""} (${fmtPct(it.value / sent)} des envoyées)`,
+    emptyText: "Pas encore de candidature. Ajoute une ligne par candidature dans docs/data/applications.csv (statut : envoyee, refus, entretien ou offre).",
+  });
+}
+
+/* ---------- Chargement ---------- */
+async function main() {
+  let data;
+  try {
+    const r = await fetch("data/matches.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    data = await r.json();
+  } catch (e) {
+    $("freshness").textContent = "Impossible de charger data/matches.json (" + e.message + ").";
+    return;
+  }
+  const offers = data.offers;
+  annotate(offers);
+  // Offres évaluables d'abord (par score), puis les non évaluables (les plus récentes d'abord)
+  offers.sort((a, b) => (b.evaluable - a.evaluable) || (b.score - a.score)
+    || String(b.date_posted || "").localeCompare(String(a.date_posted || "")));
+  const age = renderHeader(data);
+  renderHero(offers);
+  renderTable(offers);
+  for (const id of ["q", "only-eval", "hide-noise"]) $(id).addEventListener("input", () => { showAll = false; renderTable(offers); });
+  $("more").addEventListener("click", () => { showAll = true; renderTable(offers); });
+  renderCharts(data, offers);
+  renderPipeline(data, offers, age);
+
+  let apps = [];
+  try {
+    const r = await fetch("data/applications.csv", { cache: "no-cache" });
+    if (r.ok) apps = parseCsv(await r.text());
+  } catch (e) { /* pas de fichier : section vide */ }
+  renderOutcomes(apps);
+}
+main();
 </script>
 </body>
 </html>
