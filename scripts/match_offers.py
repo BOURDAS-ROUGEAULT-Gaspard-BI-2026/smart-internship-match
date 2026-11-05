@@ -169,10 +169,20 @@ def main():
     with open("data/offers/structured_offers.json", encoding="utf-8") as f:
         data = json.load(f)
 
+    # extract_offers.py ne recopie pas url/date_posted : on les reprend depuis
+    # merged_offers.json (par id) pour que le dashboard puisse lier chaque
+    # offre -- obligatoire pour afficher des offres Adzuna.
+    links = {}
+    if os.path.exists("data/offers/merged_offers.json"):
+        with open("data/offers/merged_offers.json", encoding="utf-8") as f:
+            links = {o["id"]: o for o in json.load(f)["offers"]}
+
     results = []
     for offer in data["offers"]:
         m = score_offer(profile, offer["required_skills"])
-        results.append({**offer, **m})
+        src = links.get(offer["id"], {})
+        extra = {"url": src.get("url"), "date_posted": src.get("date_posted")}
+        results.append({**extra, **offer, **m})
 
     results.sort(key=lambda r: r["score"], reverse=True)
     for r in results:
