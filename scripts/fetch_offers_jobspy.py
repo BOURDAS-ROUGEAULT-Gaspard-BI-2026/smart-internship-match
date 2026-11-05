@@ -6,7 +6,10 @@ from jobspy import scrape_jobs
 # platforms whose ToS prohibits it -- a different risk category than every other
 # source in this course. Runs local-only, on demand, never in GitHub Actions.
 
-SITES = ["indeed", "zip_recruiter"]  # deliberately excludes linkedin, google -- see Step 11b
+# deliberately excludes linkedin, google -- see Step 11b.
+# zip_recruiter removed: it only covers the US/Canada and answers French
+# searches with an HTTP 307 redirect, so it never returned anything here.
+SITES = ["indeed"]
 SEARCH_TERM = "stage informatique"
 LOCATION = "France"
 RESULTS_WANTED = 30
