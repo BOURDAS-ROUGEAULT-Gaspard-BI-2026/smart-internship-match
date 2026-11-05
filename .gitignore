@@ -1,3 +1,5 @@
+__pycache__/
+*.pyc
 output/cv_drafts/
 data/offers/jobspy_offers.json
 data/offers/merged_offers.json
