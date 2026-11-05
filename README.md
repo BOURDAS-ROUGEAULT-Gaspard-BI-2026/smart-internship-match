@@ -1,5 +1,7 @@
 # smart-internship-match
 
+Lien vers le Dashboard : https://bourdas-rougeault-gaspard-bi-2026.github.io/smart-internship-match/
+
 ## Source des offres : Adzuna au lieu de France Travail
 
 À la demande de l'enseignant, l'API France Travail (francetravail.io), prévue par le
