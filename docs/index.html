@@ -140,6 +140,7 @@
   #tooltip b { display: block; margin-bottom: 2px; }
   /* Critères (lieu, type) */
   .prefs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px 28px; }
+  .prefs-col { display: grid; gap: 20px; align-content: start; }
   .prefs h3 { margin-bottom: 0; }
   .prefs .why { margin-bottom: 10px; }
   .btn {
@@ -148,6 +149,21 @@
   }
   .btn:hover { border-color: var(--text-2); }
   .loc-add { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .combo { position: relative; flex: 1 1 200px; min-width: 0; display: flex; }
+  .suggest {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 20;
+    margin: 0; padding: 4px; list-style: none; max-height: 260px; overflow-y: auto;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+  }
+  .suggest li {
+    display: flex; justify-content: space-between; gap: 10px; align-items: baseline;
+    padding: 6px 8px; border-radius: 5px; cursor: pointer; font-size: 14px;
+  }
+  .suggest li[aria-selected="true"], .suggest li:hover { background: var(--grid); }
+  .suggest .kind { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .suggest mark { background: none; color: inherit; font-weight: 650; }
+  .suggest .none { color: var(--muted); cursor: default; }
   .loc-add input {
     flex: 1 1 200px; min-width: 0; padding: 6px 10px; border-radius: 6px;
     border: 1px solid var(--axis); background: var(--surface); color: var(--text-1); font: inherit; font-size: 14px;
@@ -211,12 +227,16 @@
         Une offre <strong>exclue</strong> sort du classement, du compteur et des graphiques. Les critères sont gardés dans ce navigateur.</p>
     </div>
     <div class="prefs">
+      <div class="prefs-col">
       <div>
         <h3>Lieu</h3>
         <p class="why">Ville, département ou région, autant que nécessaire. Le lieu le plus précis l'emporte : exclure « Île-de-France » mais prioriser « Paris » garde les offres parisiennes.</p>
         <form class="loc-add" id="loc-form">
-          <input id="loc-input" list="loc-options" autocomplete="off" placeholder="Ex. : Le Mans, Loire-Atlantique, Bretagne" aria-label="Lieu à ajouter">
-          <datalist id="loc-options"></datalist>
+          <div class="combo">
+            <input id="loc-input" autocomplete="off" placeholder="Ex. : Le Mans, Loire-Atlantique, Bretagne" aria-label="Lieu à ajouter"
+              role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="loc-suggest">
+            <ul id="loc-suggest" class="suggest" role="listbox" aria-label="Lieux présents dans les offres" hidden></ul>
+          </div>
           <button type="submit" class="btn">★ Prioriser</button>
           <button type="button" class="btn" id="loc-excl">✕ Exclure</button>
         </form>
@@ -228,6 +248,14 @@
         <p class="why">Déduit du titre de l'offre : Adzuna n'a pas de type « stage ». Une offre « stage ou CDD » a les deux types.</p>
         <div id="type-list"></div>
         <label class="opt"><input type="checkbox" id="type-only"> <span>Seulement mes types prioritaires (exclure tous les autres)</span></label>
+      </div>
+      </div>
+      <div>
+        <h3>Métier</h3>
+        <p class="why">Famille de métier déduite du titre de l'offre. Une offre « Chef de projet Business Intelligence » compte pour Gestion de projet et pour Data / IA.
+          Elle est prioritaire si une de ses familles l'est, exclue seulement si toutes le sont.</p>
+        <div id="job-list"></div>
+        <label class="opt"><input type="checkbox" id="job-only"> <span>Seulement mes métiers prioritaires (exclure tous les autres)</span></label>
       </div>
     </div>
     <div class="prefs-foot">
@@ -244,7 +272,7 @@
   <section>
     <div class="section-head">
       <h2>Où postuler en premier</h2>
-      <p class="why">Offres classées par score ajusté : correspondance avec mon profil, augmentée par mes critères de lieu et de type. Sert à choisir les prochaines candidatures et ce qu'il faut mettre en avant dans chacune.</p>
+      <p class="why">Offres classées par score ajusté : correspondance avec mon profil, augmentée par mes critères de lieu, de type et de métier. Sert à choisir les prochaines candidatures et ce qu'il faut mettre en avant dans chacune.</p>
     </div>
     <div class="filters">
       <input type="search" id="q" placeholder="Filtrer par poste, entreprise, ville ou compétence" aria-label="Filtrer les offres">
@@ -267,8 +295,8 @@
       <p><strong>Couverture</strong> : part des compétences demandées par l'offre que je possède.
       <strong>Score compétences</strong> : somme de mes niveaux (sur 5) pour ces compétences, divisée par le nombre de compétences demandées + 2.
       Le « + 2 » évite qu'une offre dont une seule compétence a été extraite obtienne un score parfait : plus l'offre donne d'information, plus le score est fiable.</p>
-      <p><strong>Score ajusté</strong> (colonne « Score ») = score compétences × (1 + bonus × nombre de critères prioritaires remplis).
-      Avec un bonus de 50 %, une offre dans un lieu prioritaire et d'un type prioritaire a son score multiplié par 2 ; une offre qui n'en remplit qu'un, par 1,5.
+      <p><strong>Score ajusté</strong> (colonne « Score ») = score compétences × (1 + bonus × nombre de critères prioritaires remplis parmi lieu, type et métier).
+      Avec un bonus de 50 %, une offre qui remplit les trois a son score multiplié par 2,5 ; deux, par 2 ; un seul, par 1,5.
       Le multiplicateur est affiché sous le score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0, mais passe devant les autres offres à 0.</p>
       <p>Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score de 0 ne veut pas dire « mauvais match ».</p>
     </details>
@@ -343,6 +371,10 @@ let showAll = false;
    offres en sont, un bonus commun à toutes ne changerait pas le classement.
    Aucun lieu n'est imposé. */
 const TYPE_ORDER = ["Stage", "Alternance", "CDI", "CDD", "Non précisé"];
+// mêmes noms que JOB_FAMILIES dans scripts/offer_attributes.py
+const JOB_ORDER = ["Développement", "Data / IA", "DevOps / Cloud / Systèmes", "Réseaux / Cybersécurité",
+  "Informatique industrielle / Embarqué", "Test / Qualité", "Support / Technicien",
+  "Gestion de projet / Business", "Autre (informatique)", "Hors informatique"];
 const NO_LOC = "Lieu non précisé (France)";
 const PREFS_KEY = "smart-internship-match:prefs:v1";
 const DEFAULT_PREFS = {
@@ -350,6 +382,10 @@ const DEFAULT_PREFS = {
   locOnly: false,
   type: { Alternance: "excl", CDI: "excl", CDD: "excl" },
   typeOnly: false,
+  // La recherche « stage informatique » ramène aussi des postes de juriste,
+  // recrutement, secrétariat... : exclus par défaut, réactivables.
+  job: { "Hors informatique": "excl" },
+  jobOnly: false,
   bonus: 0.5,              // +50 % par critère prioritaire rempli
 };
 const STATE_LABEL = { prio: "Priorité", neutral: "Neutre", excl: "Exclure" };
@@ -438,6 +474,7 @@ function annotate(offers) {
     o.types = Array.isArray(o.offer_types) && o.offer_types.length ? o.offer_types
       : [/stag|intern/i.test(o.title || "") ? "Stage" : "Non précisé"];
     o.isInternship = o.types.includes("Stage");
+    o.jobs = Array.isArray(o.job_families) && o.job_families.length ? o.job_families : ["Autre (informatique)"];
     const fallbackCity = o.region === undefined && o.location && norm(o.location) !== "france"
       ? o.location.split(",")[0].trim() : null;
     // du plus précis au plus large : c'est l'ordre de priorité des critères
@@ -466,7 +503,13 @@ const hasPrio = (map) => Object.values(map).includes("prio");
 
 function applyPrefs(offers) {
   const loc = new Map(Object.entries(prefs.loc).map(([k, v]) => [norm(k), v]));
-  const locPrio = hasPrio(prefs.loc), typePrio = hasPrio(prefs.type);
+  const locPrio = hasPrio(prefs.loc), typePrio = hasPrio(prefs.type), jobPrio = hasPrio(prefs.job);
+  // Critère à plusieurs valeurs (type, métier) : prioritaire si une des valeurs
+  // l'est, exclu seulement si toutes le sont.
+  const multiState = (values, map) => {
+    const ss = values.map((v) => map[v] || "neutral");
+    return ss.includes("prio") ? "prio" : ss.every((s) => s === "excl") ? "excl" : "neutral";
+  };
   for (const o of offers) {
     // Lieu : le premier niveau (ville, puis département, puis région) qui a un
     // critère décide. Exclure une région mais prioriser une de ses villes marche.
@@ -476,17 +519,19 @@ function applyPrefs(offers) {
       if (s) { o.locState = s; o.locMatch = t; break; }
     }
     // Type : prioritaire si un de ses types l'est, exclu si tous le sont.
-    const ts = o.types.map((t) => prefs.type[t] || "neutral");
-    o.typeState = ts.includes("prio") ? "prio" : ts.every((s) => s === "excl") ? "excl" : "neutral";
+    o.typeState = multiState(o.types, prefs.type);
+    o.jobState = multiState(o.jobs, prefs.job);
 
     o.excludedBy = [];
     if (o.locState === "excl") o.excludedBy.push(`lieu exclu : ${o.locMatch}`);
     else if (prefs.locOnly && locPrio && o.locState !== "prio") o.excludedBy.push("hors de mes lieux prioritaires");
     if (o.typeState === "excl") o.excludedBy.push(`type exclu : ${o.types.join(", ")}`);
     else if (prefs.typeOnly && typePrio && o.typeState !== "prio") o.excludedBy.push("hors de mes types prioritaires");
+    if (o.jobState === "excl") o.excludedBy.push(`métier exclu : ${o.jobs.join(", ")}`);
+    else if (prefs.jobOnly && jobPrio && o.jobState !== "prio") o.excludedBy.push("hors de mes métiers prioritaires");
     o.excluded = o.excludedBy.length > 0;
 
-    o.nPrio = (o.locState === "prio" ? 1 : 0) + (o.typeState === "prio" ? 1 : 0);
+    o.nPrio = [o.locState, o.typeState, o.jobState].filter((s) => s === "prio").length;
     o.multiplier = 1 + prefs.bonus * o.nPrio;
     o.final = o.score * o.multiplier;
   }
@@ -547,29 +592,33 @@ function renderPrefs() {
   locOnly.checked = prefs.locOnly;
   locOnly.disabled = !hasPrio(prefs.loc);
 
-  // Types
-  const typeCounts = {};
-  for (const o of OFFERS) for (const t of o.types) typeCounts[t] = (typeCounts[t] || 0) + 1;
-  const tl = $("type-list");
-  tl.replaceChildren();
-  for (const t of TYPE_ORDER) {
-    const n = typeCounts[t] || 0;
-    const cur = prefs.type[t] || "neutral";
-    const seg = el("div", { class: "seg", role: "group", "aria-label": `Type ${t}` });
-    for (const s of ["prio", "neutral", "excl"]) {
-      const b = el("button", { type: "button", class: s, "aria-pressed": String(cur === s) }, STATE_LABEL[s]);
-      b.addEventListener("click", () => {
-        if (s === "neutral") delete prefs.type[t]; else prefs.type[t] = s;
-        refresh();
-      });
-      seg.append(b);
+  // Critères à valeurs fixes : une ligne Priorité / Neutre / Exclure par valeur
+  const stateRows = (listId, order, field, key, onlyId, onlyKey, label) => {
+    const counts = {};
+    for (const o of OFFERS) for (const v of o[field]) counts[v] = (counts[v] || 0) + 1;
+    const list = $(listId);
+    list.replaceChildren();
+    for (const v of order) {
+      const n = counts[v] || 0;
+      const cur = prefs[key][v] || "neutral";
+      const seg = el("div", { class: "seg", role: "group", "aria-label": `${label} ${v}` });
+      for (const s of ["prio", "neutral", "excl"]) {
+        const b = el("button", { type: "button", class: s, "aria-pressed": String(cur === s) }, STATE_LABEL[s]);
+        b.addEventListener("click", () => {
+          if (s === "neutral") delete prefs[key][v]; else prefs[key][v] = s;
+          refresh();
+        });
+        seg.append(b);
+      }
+      list.append(el("div", { class: "type-row" },
+        el("span", {}, v, " ", el("span", { class: "n" }, `${n} offre${n > 1 ? "s" : ""}`)), seg));
     }
-    tl.append(el("div", { class: "type-row" },
-      el("span", {}, t, " ", el("span", { class: "n" }, `${n} offre${n > 1 ? "s" : ""}`)), seg));
-  }
-  const typeOnly = $("type-only");
-  typeOnly.checked = prefs.typeOnly;
-  typeOnly.disabled = !hasPrio(prefs.type);
+    const only = $(onlyId);
+    only.checked = prefs[onlyKey];
+    only.disabled = !hasPrio(prefs[key]);
+  };
+  stateRows("type-list", TYPE_ORDER, "types", "type", "type-only", "typeOnly", "Type");
+  stateRows("job-list", JOB_ORDER, "jobs", "job", "job-only", "jobOnly", "Métier");
 
   $("bonus").value = prefs.bonus;
   $("bonus-out").textContent = "+" + Math.round(prefs.bonus * 100) + " %";
@@ -577,17 +626,86 @@ function renderPrefs() {
   $("prefs-summary").textContent = `${OFFERS.length - excl} offres retenues sur ${OFFERS.length} · ${excl} exclue${excl > 1 ? "s" : ""}`;
 }
 
+/* Suggestions de lieux. Pas de <datalist> : Edge/Chrome y affichent le label
+   (« région · 26 offres ») à la place du nom et filtrent aussi sur ce label,
+   si bien que « s » proposait tout (« offre**s** »). Ici on ne cherche que dans
+   le nom, au début d'un mot (« mans » trouve « Le Mans », « loire » trouve
+   « Pays de la Loire » et « Loire-Atlantique »), sans tenir compte des accents. */
+const wordKey = (s) => " " + norm(s).replace(/[^a-z0-9]+/g, " ").trim();
+let suggestItems = [], suggestActive = -1;
+function closeSuggest() {
+  $("loc-suggest").hidden = true;
+  $("loc-input").setAttribute("aria-expanded", "false");
+  $("loc-input").removeAttribute("aria-activedescendant");
+  suggestActive = -1;
+}
+function setActive(i) {
+  const lis = $("loc-suggest").querySelectorAll("li[role=option]");
+  suggestActive = lis.length ? (i + lis.length) % lis.length : -1;
+  lis.forEach((li, j) => li.setAttribute("aria-selected", String(j === suggestActive)));
+  if (suggestActive >= 0) {
+    lis[suggestActive].scrollIntoView({ block: "nearest" });
+    $("loc-input").setAttribute("aria-activedescendant", lis[suggestActive].id);
+  }
+}
+function pickSuggest(i) {
+  const e = suggestItems[i];
+  if (!e) return;
+  $("loc-input").value = e.name;
+  closeSuggest();
+  $("loc-input").focus();
+}
+function openSuggest() {
+  const input = $("loc-input"), ul = $("loc-suggest");
+  const q = wordKey(input.value).trim();
+  const all = [...LOC_OPTIONS.values()];
+  suggestItems = (q
+    ? all.filter((e) => wordKey(e.name).includes(" " + q))
+        .sort((a, b) => (wordKey(b.name).startsWith(" " + q) - wordKey(a.name).startsWith(" " + q)) || b.n - a.n)
+    : all.sort((a, b) => b.n - a.n)
+  ).slice(0, 8);
+  ul.replaceChildren();
+  if (!suggestItems.length) {
+    ul.append(el("li", { class: "none" }, q ? "Aucune offre à cet endroit pour l'instant. Le lieu peut quand même être ajouté." : ""));
+  }
+  suggestItems.forEach((e, i) => {
+    // met en gras la partie tapée
+    const name = e.name, k = norm(name).replace(/[^a-z0-9]/g, " ");
+    const at = q ? (" " + k).indexOf(" " + q) : -1;
+    const label = at >= 0 ? [name.slice(0, at), el("mark", {}, name.slice(at, at + q.length)), name.slice(at + q.length)] : [name];
+    const li = el("li", { role: "option", id: "loc-opt-" + i, "aria-selected": "false" },
+      el("span", {}, label),
+      el("span", { class: "kind" }, `${[...e.kinds].join(" / ")} · ${e.n} offre${e.n > 1 ? "s" : ""}`));
+    li.addEventListener("mousedown", (ev) => { ev.preventDefault(); pickSuggest(i); });
+    ul.append(li);
+  });
+  ul.hidden = false;
+  input.setAttribute("aria-expanded", "true");
+  suggestActive = -1;
+}
+function setupLocSuggest() {
+  const input = $("loc-input");
+  input.addEventListener("input", openSuggest);
+  input.addEventListener("focus", openSuggest);
+  input.addEventListener("blur", closeSuggest);
+  input.addEventListener("keydown", (e) => {
+    const open = !$("loc-suggest").hidden;
+    if (e.key === "ArrowDown") { e.preventDefault(); if (!open) openSuggest(); setActive(suggestActive + 1); }
+    else if (e.key === "ArrowUp" && open) { e.preventDefault(); setActive(suggestActive - 1); }
+    else if (e.key === "Enter" && open && suggestActive >= 0) { e.preventDefault(); pickSuggest(suggestActive); }
+    else if (e.key === "Escape" && open) { e.preventDefault(); closeSuggest(); }
+  });
+}
+
 function setupPrefs() {
   LOC_OPTIONS = buildLocOptions(OFFERS);
-  const dl = $("loc-options");
-  for (const e of [...LOC_OPTIONS.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "fr"))) {
-    dl.append(el("option", { value: e.name, label: `${[...e.kinds].join(" / ")} · ${e.n} offre${e.n > 1 ? "s" : ""}` }));
-  }
-  const add = (state) => { setLoc($("loc-input").value, state); $("loc-input").value = ""; refresh(); };
+  setupLocSuggest();
+  const add = (state) => { setLoc($("loc-input").value, state); $("loc-input").value = ""; closeSuggest(); refresh(); };
   $("loc-form").addEventListener("submit", (e) => { e.preventDefault(); add("prio"); });
   $("loc-excl").addEventListener("click", () => add("excl"));
   $("loc-only").addEventListener("change", (e) => { prefs.locOnly = e.target.checked; refresh(); });
   $("type-only").addEventListener("change", (e) => { prefs.typeOnly = e.target.checked; refresh(); });
+  $("job-only").addEventListener("change", (e) => { prefs.jobOnly = e.target.checked; refresh(); });
   $("bonus").addEventListener("input", (e) => { prefs.bonus = Number(e.target.value); refresh(); });
   $("prefs-reset").addEventListener("click", () => { prefs = JSON.parse(JSON.stringify(DEFAULT_PREFS)); refresh(); });
 }
@@ -638,7 +756,7 @@ function renderTable(offers) {
     if (onlyEval && !o.evaluable) return false;
     if (hideNoise && o.duplicate) return false;
     if (!q) return true;
-    return norm([o.title, o.company, o.location, ...o.locTokens, ...o.types, ...o.matched, ...o.gaps].join(" ")).includes(q);
+    return norm([o.title, o.company, o.location, ...o.locTokens, ...o.types, ...o.jobs, ...o.matched, ...o.gaps].join(" ")).includes(q);
   });
   const plural = rows.length > 1 ? "s" : "";
   const nExcl = offers.filter((o) => o.excluded).length;
@@ -659,16 +777,19 @@ function renderTable(offers) {
     if (o.excluded) flags.push(el("span", { class: "tag excl" }, "exclue : " + o.excludedBy.join(" ; ")));
     if (o.locState === "prio") flags.push(el("span", { class: "tag prio" }, "★ lieu prioritaire : " + o.locMatch));
     if (o.typeState === "prio") flags.push(el("span", { class: "tag prio" }, "★ type prioritaire"));
+    if (o.jobState === "prio") flags.push(el("span", { class: "tag prio" }, "★ métier prioritaire : "
+      + o.jobs.filter((j) => prefs.job[j] === "prio").join(", ")));
     if (!o.evaluable) flags.push(el("span", { class: "tag" }, "non évaluable"));
     if (o.duplicate) flags.push(el("span", { class: "tag" }, "doublon"));
     const scoreCell = !o.evaluable ? "—"
-      : o.nPrio ? [fmtNum(o.final), el("div", { class: "meta", title: "Score compétences × multiplicateur des critères" },
+      : o.nPrio && o.score > 0 ? [fmtNum(o.final), el("div", { class: "meta", title: "Score compétences × multiplicateur des critères" },
           `${fmtNum(o.score)} × ${fmtNum(o.multiplier, 2).replace(/,?0+$/, "")}`)]
       : fmtNum(o.final);
     tbody.append(el("tr", { class: o.excluded ? "excluded" : null },
       el("td", { class: "num" }, scoreCell),
       el("td", { class: "num" }, o.evaluable ? [fmtPct(o.coverage), el("div", { class: "meter", "aria-hidden": "true" }, el("div", { style: `width:${o.coverage * 100}%` }))] : "—"),
       el("td", {}, title, el("div", { class: "meta" }, [o.types.join(" / "), o.company, o.location].filter(Boolean).join(" · ")),
+        el("div", { class: "meta" }, "Métier : " + o.jobs.join(", ")),
         o.experience_required ? el("div", { class: "meta" }, "Exigence : " + o.experience_required) : null,
         o.compensation_mentioned ? el("div", { class: "meta" }, "Rémunération : " + o.compensation_mentioned) : null,
         flags.length ? el("div", { class: "chips" }, flags) : null),

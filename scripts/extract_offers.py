@@ -62,6 +62,7 @@ def main():
             "department": offer.get("department"),
             "city": offer.get("city"),
             "offer_types": offer.get("offer_types"),
+            "job_families": offer.get("job_families"),
             "required_skills": extracted.get("required_skills", []),
             "responsibilities": extracted.get("responsibilities", []),
             "experience_required": extracted.get("experience_required"),

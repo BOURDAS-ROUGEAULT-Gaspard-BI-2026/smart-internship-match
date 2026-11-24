@@ -102,18 +102,27 @@ versionné. Je les relis et les corrige avant tout usage.
     garde cette ville.
   - **Type d'offre** (Stage, Alternance, CDI, CDD, Non précisé) : priorité, neutre ou
     exclusion pour chacun. Par défaut, alternance, CDI et CDD sont exclus.
+  - **Métier** : Développement, Data / IA, DevOps / Cloud / Systèmes, Réseaux /
+    Cybersécurité, Informatique industrielle / Embarqué, Test / Qualité, Support /
+    Technicien, Gestion de projet / Business, Autre (informatique), Hors informatique.
+    Famille déduite du titre (motifs vérifiés sur les titres réels collectés). Une offre
+    peut avoir plusieurs familles (« Chef de projet BI » = gestion de projet + data) : elle
+    est prioritaire si une de ses familles l'est, exclue seulement si toutes le sont.
+    « Hors informatique » (juriste, recrutement, secrétariat… que ramène la recherche
+    Adzuna) est exclu par défaut.
   - Pour chaque critère, une option « seulement mes priorités » exclut tout le reste.
   - **Score ajusté** = score compétences × (1 + bonus × nombre de critères prioritaires
-    remplis), avec un bonus réglable (50 % par défaut). Le multiplicateur est affiché sous
+    remplis parmi lieu, type et métier), avec un bonus réglable (50 % par défaut). Le multiplicateur est affiché sous
     chaque score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0.
   - Les offres exclues sortent du classement, du compteur principal et des graphiques
     d'efficacité, qui sont recalculés sur les offres retenues. Elles restent visibles
     (grisées, avec la raison) si on coche « afficher les offres exclues ».
   - Les critères sont gardés dans le navigateur (`localStorage`).
-  - Région, département, ville et type sont calculés par `scripts/offer_attributes.py`,
+  - Région, département, ville, type et métier sont calculés par `scripts/offer_attributes.py`,
     appelé par `merge_offer_sources.py` (à partir du champ `location.area` d'Adzuna, le plus
     fiable) et, en secours, par `match_offers.py` (à partir du texte du lieu et du titre).
-    Le type est lu dans le titre, car Adzuna n'a pas de type « stage ».
+    Le type et le métier sont lus dans le titre, car Adzuna n'a pas de type « stage » et
+    sa description est tronquée.
 - **Où postuler en premier** : tableau des offres trié par score ajusté, avec la
   couverture, les compétences que j'ai et celles qui manquent, et le lien vers l'offre.
   Recherche texte, filtre « seulement les offres évaluables » et filtre qui masque les

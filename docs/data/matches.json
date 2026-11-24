@@ -19,6 +19,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [
         "Python"
       ],
@@ -48,6 +51,10 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Test / Qualité"
       ],
       "required_skills": [
         "Python",
@@ -85,6 +92,9 @@
       "offer_types": [
         "Alternance"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [
         "Java"
       ],
@@ -116,6 +126,10 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Test / Qualité"
       ],
       "required_skills": [
         "Python",
@@ -152,6 +166,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [
         "GitLab",
@@ -190,6 +207,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué",
+        "Support / Technicien"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -215,6 +236,10 @@
       "city": "Paris",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Data / IA"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -242,6 +267,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -267,6 +295,9 @@
       "city": "Colombier-Saugnieu",
       "offer_types": [
         "Non précisé"
+      ],
+      "job_families": [
+        "Hors informatique"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -294,6 +325,9 @@
       "offer_types": [
         "CDD"
       ],
+      "job_families": [
+        "Support / Technicien"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -320,6 +354,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -345,6 +382,9 @@
       "city": "Clermont-Ferrand",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Hors informatique"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -374,6 +414,11 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement",
+        "DevOps / Cloud / Systèmes",
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -399,6 +444,9 @@
       "city": "Cannes",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -426,6 +474,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -451,6 +502,10 @@
       "city": "Bordeaux",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Informatique industrielle / Embarqué",
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -478,6 +533,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -503,6 +561,9 @@
       "city": "Vélizy-Villacoublay",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -530,6 +591,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -555,6 +619,10 @@
       "city": "Saint-Médard-en-Jalles",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA",
+        "Informatique industrielle / Embarqué"
       ],
       "required_skills": [
         "Informatique Industrielle",
@@ -592,6 +660,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -617,6 +688,9 @@
       "city": "Bordeaux",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -644,6 +718,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes",
+        "Test / Qualité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -669,6 +747,9 @@
       "city": "Cannes",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -696,6 +777,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA",
+        "Test / Qualité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -721,6 +806,9 @@
       "city": "Cannes",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -748,6 +836,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -773,6 +864,11 @@
       "city": "Gennevilliers",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Data / IA",
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -800,6 +896,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA",
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -825,6 +925,10 @@
       "city": "Élancourt",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA",
+        "Gestion de projet / Business"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -852,6 +956,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -877,6 +984,9 @@
       "city": "Cholet",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -904,6 +1014,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA",
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -929,6 +1043,10 @@
       "city": "Cannes",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -956,6 +1074,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -981,6 +1102,9 @@
       "city": "L'Haÿ-les-Roses",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Autre (informatique)"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1008,6 +1132,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA",
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1033,6 +1161,9 @@
       "city": "Élancourt",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1060,6 +1191,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Hors informatique"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1085,6 +1219,10 @@
       "city": "Cholet",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes",
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1112,6 +1250,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Autre (informatique)"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1138,6 +1279,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement",
+        "Data / IA"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1163,6 +1308,9 @@
       "city": "Saint-Nazaire",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -1194,6 +1342,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué",
+        "Support / Technicien"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Accompanied the teams in the use of computer tools",
@@ -1223,6 +1375,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Hors informatique"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1248,6 +1403,9 @@
       "city": "Montrouge",
       "offer_types": [
         "Non précisé"
+      ],
+      "job_families": [
+        "Autre (informatique)"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1275,6 +1433,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement",
+        "Réseaux / Cybersécurité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1300,6 +1462,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1327,6 +1492,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1352,6 +1520,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1379,6 +1550,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1405,6 +1579,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1430,6 +1607,9 @@
       "city": "Vélizy-Villacoublay",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -1460,6 +1640,9 @@
       "offer_types": [
         "CDI"
       ],
+      "job_families": [
+        "Support / Technicien"
+      ],
       "required_skills": [],
       "responsibilities": [
         "accompagner les utilisateurs au quotidien dans la résolution de leurs problématiques IT"
@@ -1488,6 +1671,9 @@
       "offer_types": [
         "Non précisé"
       ],
+      "job_families": [
+        "Autre (informatique)"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1513,6 +1699,9 @@
       "city": null,
       "offer_types": [
         "Non précisé"
+      ],
+      "job_families": [
+        "Hors informatique"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1540,6 +1729,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1565,6 +1757,9 @@
       "city": "Rangueuil",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement"
       ],
       "required_skills": [
         "LU",
@@ -1600,6 +1795,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes",
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1625,6 +1824,10 @@
       "city": "Élancourt",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA",
+        "Gestion de projet / Business"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1652,6 +1855,9 @@
       "offer_types": [
         "Non précisé"
       ],
+      "job_families": [
+        "Autre (informatique)"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1677,6 +1883,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Gestion de projet / Business"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1704,6 +1913,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1729,6 +1941,10 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Informatique industrielle / Embarqué",
+        "Support / Technicien"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1756,6 +1972,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement",
+        "Data / IA"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1781,6 +2001,9 @@
       "city": "Rue",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Autre (informatique)"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1808,6 +2031,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Hors informatique"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1833,6 +2059,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Hors informatique"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -1860,6 +2089,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Développement"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1885,6 +2117,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Gestion de projet / Business"
       ],
       "required_skills": [
         "Azure"
@@ -1922,6 +2157,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1947,6 +2185,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Gestion de projet / Business"
       ],
       "required_skills": [
         "IT/OT infrastructures",
@@ -1983,6 +2224,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [
         "maintien en condition opérationnelle",
@@ -2013,6 +2257,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Support / Technicien"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Assistance Utilisateur : Répondre aux demandes d'assistance des utilisateurs, résoudre les problèmes techniques et offrir un excellent service client.",
@@ -2042,6 +2289,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Autre (informatique)"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2067,6 +2317,10 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Data / IA"
       ],
       "required_skills": [
         "Power BI"
@@ -2101,6 +2355,9 @@
       "offer_types": [
         "Non précisé"
       ],
+      "job_families": [
+        "Autre (informatique)"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2127,6 +2384,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2152,6 +2412,9 @@
       "city": "Vélizy-Villacoublay",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2180,6 +2443,10 @@
       "city": null,
       "offer_types": [
         "Alternance"
+      ],
+      "job_families": [
+        "Développement",
+        "Support / Technicien"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2211,6 +2478,9 @@
         "Stage",
         "CDD"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2236,6 +2506,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Autre (informatique)"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -2263,6 +2536,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2288,6 +2564,9 @@
       "city": "Cholet 1er Canton",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -2315,6 +2594,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2340,6 +2622,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -2367,6 +2652,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2392,6 +2680,10 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Data / IA",
+        "Informatique industrielle / Embarqué"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -2419,6 +2711,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Data / IA",
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2444,6 +2740,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [],
@@ -2471,6 +2770,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2496,6 +2798,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Autre (informatique)"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2524,6 +2829,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Informatique industrielle / Embarqué"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2554,6 +2862,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2579,6 +2890,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2609,6 +2923,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "DevOps / Cloud / Systèmes"
+      ],
       "required_skills": null,
       "responsibilities": null,
       "experience_required": null,
@@ -2634,6 +2951,10 @@
       "city": "Collonges",
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Développement",
+        "Test / Qualité"
       ],
       "required_skills": [],
       "responsibilities": [
@@ -2665,6 +2986,9 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Gestion de projet / Business"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2691,6 +3015,10 @@
       "offer_types": [
         "Stage"
       ],
+      "job_families": [
+        "Informatique industrielle / Embarqué",
+        "Test / Qualité"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2716,6 +3044,9 @@
       "city": null,
       "offer_types": [
         "Stage"
+      ],
+      "job_families": [
+        "Réseaux / Cybersécurité"
       ],
       "required_skills": [],
       "responsibilities": [],

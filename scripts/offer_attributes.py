@@ -178,6 +178,52 @@ def offer_types(title, contract_type=None, job_type=None):
     # mission : on ne l'utilise pas pour éviter de classer un stage en CDD.
     return found or ["Non précisé"]
 
+# --- Famille de métier -----------------------------------------------------------
+#
+# Lue dans le titre, seule partie de l'offre toujours complète (la description
+# Adzuna est tronquée). Les motifs portent sur le titre normalisé par _key() :
+# minuscules, sans accents, ponctuation remplacée par des espaces ("CI/CD" ->
+# "ci cd", "V&V" -> "v v"). Une offre peut relever de plusieurs familles
+# ("Chef de projet Business Intelligence" = gestion de projet + data).
+# Chaque motif a été vérifié sur les titres réels collectés ; les exclusions
+# ("reseau de partenaires", "exploitation de donnees") corrigent des faux
+# positifs constatés ; "d(e)?velopp" couvre les titres Adzuna dont les
+# accents ont été perdus ("Dveloppement").
+
+JOB_FAMILIES = [
+    ("Développement", r"\bd(e)?velopp|\bdev\b|full ?stack|back ?end|front ?end|logiciel|software|\bweb\b"
+                      r"|programm|python|phyton|java|\bux\b|\bui\b|serious game|\bscript"),
+    ("Data / IA", r"\bdata\b|donnees (heterogenes|de flux)|analyse intelligente|\bbi\b|business intelligence"
+                  r"|power ?bi|\bia\b|intelligence artificielle|artificial intelligence|machine learning|deep learning|\bvision\b|aiops|\bml\b"),
+    ("DevOps / Cloud / Systèmes", r"devops|sysops|cloud|\bci cd\b|conteneur|docker|kubernetes|virtualisation"
+                                  r"|\bnas\b|infrastructure|systemes? et reseaux|deploiement"),
+    ("Réseaux / Cybersécurité", r"\breseaux?\b(?! de partenaires)|network|telecom|\bradio\b|cyber"
+                                r"|securite (informatique|des si)|\bssi\b|continuite d activite|resilience|flux ip"),
+    ("Informatique industrielle / Embarqué", r"informatique industrielle|automatisme|automaticien|embarque"
+                                             r"|electronique|digitalisation industrielle|\bfao\b|\bplm\b"
+                                             r"|systemes? industriels?|moyens d essais|environnement essais"),
+    ("Test / Qualité", r"\btests?\b|validation|verification|\bv v\b|qualite|fiabilite|recette"),
+    ("Support / Technicien", r"technicien|support|\bexploitation\b(?! de donnees)|helpdesk|proximite|itinerant"
+                             r"|administratif informatique"),
+    ("Gestion de projet / Business", r"chef de projet|project manager|gestion de projet|scrum|business analyst"
+                                     r"|\bmoa\b|\bamoa\b|\bpmo\b|product owner|analyste it|consultant"),
+]
+OTHER_IT = "Autre (informatique)"
+NOT_IT = "Hors informatique"
+_JOB_RX = [(name, re.compile(rx)) for name, rx in JOB_FAMILIES]
+_IT_RX = re.compile(r"informati|numerique|digital|\bsi\b|\bdsi\b|\bit\b|quantique|logiciel|systeme")
+
+def job_families(title):
+    """-> liste des familles de métier ; "Autre (informatique)" si le titre
+    parle d'informatique sans famille reconnue, "Hors informatique" sinon
+    (juriste, recrutement, secrétariat... ramenés par la recherche Adzuna)."""
+    t = _key(title)
+    found = [name for name, rx in _JOB_RX if rx.search(t)]
+    if found:
+        return found
+    return [OTHER_IT if _IT_RX.search(t) else NOT_IT]
+
 def offer_attributes(location=None, area=None, title=None, contract_type=None, job_type=None):
     return {**location_parts(location, area),
-            "offer_types": offer_types(title, contract_type, job_type)}
+            "offer_types": offer_types(title, contract_type, job_type),
+            "job_families": job_families(title)}
