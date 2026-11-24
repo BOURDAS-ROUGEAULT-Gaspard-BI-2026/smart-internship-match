@@ -297,8 +297,11 @@
       Le « + 2 » évite qu'une offre dont une seule compétence a été extraite obtienne un score parfait : plus l'offre donne d'information, plus le score est fiable.</p>
       <p><strong>Score ajusté</strong> (colonne « Score ») = score compétences × (1 + bonus × nombre de critères prioritaires remplis parmi lieu, type et métier).
       Avec un bonus de 50 %, une offre qui remplit les trois a son score multiplié par 2,5 ; deux, par 2 ; un seul, par 1,5.
-      Le multiplicateur est affiché sous le score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0, mais passe devant les autres offres à 0.</p>
-      <p>Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score de 0 ne veut pas dire « mauvais match ».</p>
+      Le multiplicateur est affiché sous le score. Les critères ne remplacent pas les compétences : une offre évaluée à 0 (aucune compétence en commun) reste à 0.</p>
+      <p>Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score compétences n'est pas nul mais <strong>inconnu</strong> :
+      on lui attribue la moyenne des offres évaluables (score <em>estimé</em>, noté « ≈ »), puis mes critères s'appliquent comme pour les autres offres.
+      Elle passe ainsi devant une offre évaluée sans aucune compétence en commun, reste derrière les bons matchs avérés, et remonte si elle est dans un lieu ou un métier prioritaire.
+      Les offres non évaluables ne comptent pas dans le compteur principal ni dans la répartition des scores, qui ne portent que sur des scores mesurés.</p>
     </details>
   </section>
 
@@ -390,6 +393,13 @@ const DEFAULT_PREFS = {
 };
 const STATE_LABEL = { prio: "Priorité", neutral: "Neutre", excl: "Exclure" };
 let DATA = null, OFFERS = [], LOC_OPTIONS = new Map();
+/* Score compétences attribué aux offres non évaluables : moyenne des offres
+   évaluables, calculée une fois sur toutes les offres (et non sur les offres
+   retenues) pour qu'il ne bouge pas quand on change les critères. Une offre
+   évaluée à 0 (aucune compétence en commun, mauvais match avéré) reste
+   derrière une offre inconnue ; une offre inconnue reste derrière les bons
+   matchs avérés, sauf si mes critères la font passer devant. */
+let ESTIMATED_SKILL_SCORE = 0;
 let prefs = loadPrefs();
 
 const $ = (id) => document.getElementById(id);
@@ -533,7 +543,11 @@ function applyPrefs(offers) {
 
     o.nPrio = [o.locState, o.typeState, o.jobState].filter((s) => s === "prio").length;
     o.multiplier = 1 + prefs.bonus * o.nPrio;
-    o.final = o.score * o.multiplier;
+    // Offre non évaluable : son score compétences est inconnu, pas nul. On
+    // prend la moyenne des offres évaluables (ESTIMATED_SKILL_SCORE) pour que
+    // les critères puissent quand même la faire monter ou descendre.
+    o.baseScore = o.evaluable ? o.score : ESTIMATED_SKILL_SCORE;
+    o.final = o.baseScore * o.multiplier;
   }
   offers.sort((a, b) => (a.excluded - b.excluded) || (b.final - a.final) || (b.nPrio - a.nPrio)
     || (b.evaluable - a.evaluable) || String(b.date_posted || "").localeCompare(String(a.date_posted || "")));
@@ -781,9 +795,13 @@ function renderTable(offers) {
       + o.jobs.filter((j) => prefs.job[j] === "prio").join(", ")));
     if (!o.evaluable) flags.push(el("span", { class: "tag" }, "non évaluable"));
     if (o.duplicate) flags.push(el("span", { class: "tag" }, "doublon"));
-    const scoreCell = !o.evaluable ? "—"
+    const mult = fmtNum(o.multiplier, 2).replace(/,?0+$/, "");
+    const scoreCell = !o.evaluable
+      ? el("span", { title: `Compétences non détectées : score compétences estimé à ${fmtNum(ESTIMATED_SKILL_SCORE)} (moyenne des offres évaluables), puis multiplié par mes critères.` },
+          "≈ " + fmtNum(o.final),
+          el("div", { class: "meta" }, o.nPrio ? `estimé ${fmtNum(ESTIMATED_SKILL_SCORE)} × ${mult}` : "estimé"))
       : o.nPrio && o.score > 0 ? [fmtNum(o.final), el("div", { class: "meta", title: "Score compétences × multiplicateur des critères" },
-          `${fmtNum(o.score)} × ${fmtNum(o.multiplier, 2).replace(/,?0+$/, "")}`)]
+          `${fmtNum(o.score)} × ${mult}`)]
       : fmtNum(o.final);
     tbody.append(el("tr", { class: o.excluded ? "excluded" : null },
       el("td", { class: "num" }, scoreCell),
@@ -932,6 +950,8 @@ async function main() {
   DATA = data;
   OFFERS = data.offers;
   annotate(OFFERS);
+  const evalScores = OFFERS.filter((o) => o.evaluable).map((o) => o.score);
+  ESTIMATED_SKILL_SCORE = evalScores.length ? evalScores.reduce((a, b) => a + b, 0) / evalScores.length : 0;
   const age = renderHeader(data);
   setupPrefs();
   refresh();  // applique les critères (score ajusté, exclusions) puis dessine

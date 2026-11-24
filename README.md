@@ -113,7 +113,13 @@ versionné. Je les relis et les corrige avant tout usage.
   - Pour chaque critère, une option « seulement mes priorités » exclut tout le reste.
   - **Score ajusté** = score compétences × (1 + bonus × nombre de critères prioritaires
     remplis parmi lieu, type et métier), avec un bonus réglable (50 % par défaut). Le multiplicateur est affiché sous
-    chaque score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0.
+    chaque score. Les critères ne remplacent pas les compétences : une offre évaluée à 0
+    (aucune compétence en commun) reste à 0.
+  - **Offres non évaluables** (aucune compétence extraite) : leur score compétences est
+    *inconnu*, pas nul. Elles reçoivent un score *estimé* égal à la moyenne des offres
+    évaluables (≈ 0,10), puis les critères s'appliquent comme aux autres. Elles passent
+    devant les offres évaluées à 0, restent derrière les bons matchs avérés, et remontent
+    si elles sont dans un lieu ou un métier prioritaire. Le score est affiché « ≈ … estimé ».
   - Les offres exclues sortent du classement, du compteur principal et des graphiques
     d'efficacité, qui sont recalculés sur les offres retenues. Elles restent visibles
     (grisées, avec la raison) si on coche « afficher les offres exclues ».
