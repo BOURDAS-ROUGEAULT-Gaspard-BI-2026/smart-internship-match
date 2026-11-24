@@ -138,6 +138,60 @@
     font-size: 12px; max-width: 260px;
   }
   #tooltip b { display: block; margin-bottom: 2px; }
+  /* Critères (lieu, type) */
+  .prefs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px 28px; }
+  .prefs h3 { margin-bottom: 0; }
+  .prefs .why { margin-bottom: 10px; }
+  .btn {
+    padding: 6px 12px; border-radius: 6px; cursor: pointer; font: inherit; font-size: 13px;
+    border: 1px solid var(--axis); background: var(--surface); color: var(--text-1);
+  }
+  .btn:hover { border-color: var(--text-2); }
+  .loc-add { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .loc-add input {
+    flex: 1 1 200px; min-width: 0; padding: 6px 10px; border-radius: 6px;
+    border: 1px solid var(--axis); background: var(--surface); color: var(--text-1); font: inherit; font-size: 14px;
+  }
+  .pref-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; min-height: 28px; align-items: center; }
+  .pchip {
+    display: inline-flex; align-items: center; gap: 4px; font-size: 13px;
+    border: 1px solid var(--border); border-radius: 999px; padding: 2px 4px 2px 10px;
+  }
+  .pchip.prio { border-color: var(--series-1); }
+  .pchip.excl { border-color: var(--critical); }
+  .pchip .state { font-weight: 700; }
+  .pchip.prio .state { color: var(--link); }
+  .pchip.excl .state { color: var(--critical); }
+  .pchip .n { color: var(--muted); font-size: 12px; }
+  .pchip button {
+    border: 0; background: none; color: var(--text-2); cursor: pointer; font: inherit; font-size: 12px;
+    padding: 0 5px; border-radius: 999px; line-height: 20px;
+  }
+  .pchip button:hover { background: var(--grid); color: var(--text-1); }
+  .type-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 10px; padding: 4px 0; font-size: 14px; }
+  .type-row .n { color: var(--muted); font-size: 12px; }
+  .seg { display: inline-flex; border: 1px solid var(--axis); border-radius: 6px; overflow: hidden; }
+  .seg button {
+    font: inherit; font-size: 12px; padding: 3px 10px; cursor: pointer;
+    background: var(--surface); color: var(--text-2); border: 0; border-left: 1px solid var(--axis);
+  }
+  .seg button:first-child { border-left: 0; }
+  .seg button[aria-pressed="true"].prio { background: var(--series-1); color: #fff; }
+  .seg button[aria-pressed="true"].neutral { background: var(--grid); color: var(--text-1); }
+  .seg button[aria-pressed="true"].excl { background: var(--critical); color: #fff; }
+  .opt { display: flex; gap: 6px; align-items: center; color: var(--text-2); font-size: 13px; margin-top: 6px; }
+  .opt input:disabled + span { color: var(--muted); }
+  .prefs-foot {
+    display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center;
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--grid); font-size: 13px; color: var(--text-2);
+  }
+  .prefs-foot input[type=range] { vertical-align: middle; width: 140px; }
+  .prefs-foot output { color: var(--text-1); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .tag.prio { border-style: solid; border-color: var(--series-1); color: var(--link); }
+  .tag.excl { border-style: solid; border-color: var(--critical); color: var(--critical); }
+  tr.excluded td { opacity: 0.55; }
+  .hero-note { display: block; margin-top: 6px; font-size: 13px; }
+
   .hit { outline: none; }
   .hit:focus-visible { outline: 2px solid var(--series-1); outline-offset: 2px; }
 </style>
@@ -149,18 +203,54 @@
     <p class="sub" id="freshness">Chargement des données…</p>
   </header>
 
+  <!-- 0. Mes critères : ils modifient le score de chaque offre -->
+  <div class="card" id="prefs-card" style="margin-bottom:12px">
+    <div class="section-head">
+      <h2>Mes critères</h2>
+      <p class="why">Ils entrent dans le calcul du score. Une offre qui remplit un critère <strong>prioritaire</strong> voit son score augmenter.
+        Une offre <strong>exclue</strong> sort du classement, du compteur et des graphiques. Les critères sont gardés dans ce navigateur.</p>
+    </div>
+    <div class="prefs">
+      <div>
+        <h3>Lieu</h3>
+        <p class="why">Ville, département ou région, autant que nécessaire. Le lieu le plus précis l'emporte : exclure « Île-de-France » mais prioriser « Paris » garde les offres parisiennes.</p>
+        <form class="loc-add" id="loc-form">
+          <input id="loc-input" list="loc-options" autocomplete="off" placeholder="Ex. : Le Mans, Loire-Atlantique, Bretagne" aria-label="Lieu à ajouter">
+          <datalist id="loc-options"></datalist>
+          <button type="submit" class="btn">★ Prioriser</button>
+          <button type="button" class="btn" id="loc-excl">✕ Exclure</button>
+        </form>
+        <div class="pref-chips" id="loc-list"></div>
+        <label class="opt"><input type="checkbox" id="loc-only"> <span>Seulement mes lieux prioritaires (exclure tous les autres)</span></label>
+      </div>
+      <div>
+        <h3>Type d'offre</h3>
+        <p class="why">Déduit du titre de l'offre : Adzuna n'a pas de type « stage ». Une offre « stage ou CDD » a les deux types.</p>
+        <div id="type-list"></div>
+        <label class="opt"><input type="checkbox" id="type-only"> <span>Seulement mes types prioritaires (exclure tous les autres)</span></label>
+      </div>
+    </div>
+    <div class="prefs-foot">
+      <label for="bonus">Bonus par critère prioritaire rempli</label>
+      <span><input type="range" id="bonus" min="0" max="2" step="0.25"> <output id="bonus-out" for="bonus"></output></span>
+      <span id="prefs-summary"></span>
+      <button type="button" class="btn" id="prefs-reset" style="margin-left:auto">Réinitialiser les critères</button>
+    </div>
+  </div>
+
   <!-- 1. La décision principale -->
   <div class="card hero" id="hero"></div>
 
   <section>
     <div class="section-head">
       <h2>Où postuler en premier</h2>
-      <p class="why">Offres classées par score de correspondance avec mon profil. Sert à choisir les prochaines candidatures et ce qu'il faut mettre en avant dans chacune.</p>
+      <p class="why">Offres classées par score ajusté : correspondance avec mon profil, augmentée par mes critères de lieu et de type. Sert à choisir les prochaines candidatures et ce qu'il faut mettre en avant dans chacune.</p>
     </div>
     <div class="filters">
       <input type="search" id="q" placeholder="Filtrer par poste, entreprise, ville ou compétence" aria-label="Filtrer les offres">
       <label><input type="checkbox" id="only-eval"> Seulement les offres évaluables</label>
-      <label><input type="checkbox" id="hide-noise" checked> Masquer doublons et non-stages</label>
+      <label><input type="checkbox" id="hide-noise" checked> Masquer les doublons</label>
+      <label><input type="checkbox" id="show-excl"> Afficher les offres exclues</label>
       <span class="count" id="count"></span>
     </div>
     <div class="table-wrap">
@@ -175,9 +265,12 @@
     <details>
       <summary>Comment lire le score</summary>
       <p><strong>Couverture</strong> : part des compétences demandées par l'offre que je possède.
-      <strong>Score</strong> : somme de mes niveaux (sur 5) pour ces compétences, divisée par le nombre de compétences demandées + 2.
-      Le « + 2 » évite qu'une offre dont une seule compétence a été extraite obtienne un score parfait : plus l'offre donne d'information, plus le score est fiable.
-      Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score de 0 ne veut pas dire « mauvais match ».</p>
+      <strong>Score compétences</strong> : somme de mes niveaux (sur 5) pour ces compétences, divisée par le nombre de compétences demandées + 2.
+      Le « + 2 » évite qu'une offre dont une seule compétence a été extraite obtienne un score parfait : plus l'offre donne d'information, plus le score est fiable.</p>
+      <p><strong>Score ajusté</strong> (colonne « Score ») = score compétences × (1 + bonus × nombre de critères prioritaires remplis).
+      Avec un bonus de 50 %, une offre dans un lieu prioritaire et d'un type prioritaire a son score multiplié par 2 ; une offre qui n'en remplit qu'un, par 1,5.
+      Le multiplicateur est affiché sous le score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0, mais passe devant les autres offres à 0.</p>
+      <p>Une offre <em>non évaluable</em> est une offre dont aucune compétence n'a pu être extraite (description Adzuna trop courte). Son score de 0 ne veut pas dire « mauvais match ».</p>
     </details>
   </section>
 
@@ -185,7 +278,7 @@
   <section>
     <div class="section-head">
       <h2>Efficacité de la recherche</h2>
-      <p class="why">Ce que le marché demande par rapport à ce que je sais faire.</p>
+      <p class="why">Ce que le marché demande par rapport à ce que je sais faire, calculé sur les offres retenues par mes critères.</p>
     </div>
     <div class="grid-2">
       <div class="card">
@@ -199,8 +292,8 @@
         <div class="bars" id="matched-chart" role="img"></div>
       </div>
       <div class="card">
-        <h3>Répartition des scores</h3>
-        <p class="why">Nombre d'offres évaluables par tranche de score. Montre si la recherche ramène des offres adaptées ou surtout du bruit.</p>
+        <h3>Répartition des scores ajustés</h3>
+        <p class="why">Nombre d'offres évaluables et retenues par mes critères, par tranche de score. Montre si la recherche ramène des offres adaptées ou surtout du bruit.</p>
         <div id="hist-chart" role="img"></div>
       </div>
     </div>
@@ -243,6 +336,25 @@ const MIN_COVERAGE = 0.3;      // même seuil que draft_cv.py
 const PENDING_ALERT_DAYS = 10; // contrôle de suivi : pas de réponse après 10 jours
 const PAGE_SIZE = 15;
 let showAll = false;
+
+/* Critères par défaut : on cherche un stage. Alternance, CDI et CDD sont exclus,
+   ce qui reproduit l'ancien filtre « masquer les non-stages », mais l'utilisateur
+   peut maintenant le modifier. « Stage » reste neutre : presque toutes les
+   offres en sont, un bonus commun à toutes ne changerait pas le classement.
+   Aucun lieu n'est imposé. */
+const TYPE_ORDER = ["Stage", "Alternance", "CDI", "CDD", "Non précisé"];
+const NO_LOC = "Lieu non précisé (France)";
+const PREFS_KEY = "smart-internship-match:prefs:v1";
+const DEFAULT_PREFS = {
+  loc: {},                 // nom de lieu -> "prio" | "excl"
+  locOnly: false,
+  type: { Alternance: "excl", CDI: "excl", CDD: "excl" },
+  typeOnly: false,
+  bonus: 0.5,              // +50 % par critère prioritaire rempli
+};
+const STATE_LABEL = { prio: "Priorité", neutral: "Neutre", excl: "Exclure" };
+let DATA = null, OFFERS = [], LOC_OPTIONS = new Map();
+let prefs = loadPrefs();
 
 const $ = (id) => document.getElementById(id);
 const fmtNum = (x, d = 2) => x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -321,11 +433,173 @@ function annotate(offers) {
   const seen = new Set();
   for (const o of offers) {
     o.evaluable = (o.matched.length + o.gaps.length) > 0;
-    o.isInternship = /stag|intern/i.test(o.title || "");
+    // offer_types / region / department / city viennent du pipeline
+    // (scripts/offer_attributes.py). Repli si le fichier est plus ancien.
+    o.types = Array.isArray(o.offer_types) && o.offer_types.length ? o.offer_types
+      : [/stag|intern/i.test(o.title || "") ? "Stage" : "Non précisé"];
+    o.isInternship = o.types.includes("Stage");
+    const fallbackCity = o.region === undefined && o.location && norm(o.location) !== "france"
+      ? o.location.split(",")[0].trim() : null;
+    // du plus précis au plus large : c'est l'ordre de priorité des critères
+    o.locTokens = [o.city || fallbackCity, o.department, o.region].filter(Boolean)
+      .filter((t, i, a) => a.findIndex((u) => norm(u) === norm(t)) === i);
+    if (!o.locTokens.length) o.locTokens = [NO_LOC];
     const key = norm(o.title).replace(/^stage\s*:\s*/, "").replace(/[^a-z0-9]+/g, " ").trim() + "|" + norm(o.company).trim();
     o.duplicate = seen.has(key);
     seen.add(key);
   }
+}
+
+/* ---------- Critères : état, calcul du score ajusté ---------- */
+function loadPrefs() {
+  const base = JSON.parse(JSON.stringify(DEFAULT_PREFS));
+  try {
+    const s = JSON.parse(localStorage.getItem(PREFS_KEY));
+    if (s && typeof s === "object") return { ...base, ...s };
+  } catch (e) { /* stockage indisponible : critères par défaut */ }
+  return base;
+}
+function savePrefs() {
+  try { localStorage.setItem(PREFS_KEY, JSON.stringify(prefs)); } catch (e) { /* ignoré */ }
+}
+const hasPrio = (map) => Object.values(map).includes("prio");
+
+function applyPrefs(offers) {
+  const loc = new Map(Object.entries(prefs.loc).map(([k, v]) => [norm(k), v]));
+  const locPrio = hasPrio(prefs.loc), typePrio = hasPrio(prefs.type);
+  for (const o of offers) {
+    // Lieu : le premier niveau (ville, puis département, puis région) qui a un
+    // critère décide. Exclure une région mais prioriser une de ses villes marche.
+    o.locState = "neutral"; o.locMatch = null;
+    for (const t of o.locTokens) {
+      const s = loc.get(norm(t));
+      if (s) { o.locState = s; o.locMatch = t; break; }
+    }
+    // Type : prioritaire si un de ses types l'est, exclu si tous le sont.
+    const ts = o.types.map((t) => prefs.type[t] || "neutral");
+    o.typeState = ts.includes("prio") ? "prio" : ts.every((s) => s === "excl") ? "excl" : "neutral";
+
+    o.excludedBy = [];
+    if (o.locState === "excl") o.excludedBy.push(`lieu exclu : ${o.locMatch}`);
+    else if (prefs.locOnly && locPrio && o.locState !== "prio") o.excludedBy.push("hors de mes lieux prioritaires");
+    if (o.typeState === "excl") o.excludedBy.push(`type exclu : ${o.types.join(", ")}`);
+    else if (prefs.typeOnly && typePrio && o.typeState !== "prio") o.excludedBy.push("hors de mes types prioritaires");
+    o.excluded = o.excludedBy.length > 0;
+
+    o.nPrio = (o.locState === "prio" ? 1 : 0) + (o.typeState === "prio" ? 1 : 0);
+    o.multiplier = 1 + prefs.bonus * o.nPrio;
+    o.final = o.score * o.multiplier;
+  }
+  offers.sort((a, b) => (a.excluded - b.excluded) || (b.final - a.final) || (b.nPrio - a.nPrio)
+    || (b.evaluable - a.evaluable) || String(b.date_posted || "").localeCompare(String(a.date_posted || "")));
+}
+
+function buildLocOptions(offers) {
+  const kinds = ["ville", "département", "région"];
+  const m = new Map();
+  for (const o of offers) {
+    const levels = o.locTokens[0] === NO_LOC ? [[NO_LOC, "lieu"]]
+      : [[o.city || (o.region === undefined ? o.locTokens[0] : null), kinds[0]], [o.department, kinds[1]], [o.region, kinds[2]]];
+    const seenHere = new Set();
+    for (const [name, kind] of levels) {
+      if (!name) continue;
+      const k = norm(name);
+      const e = m.get(k) || { name, kinds: new Set(), n: 0 };
+      e.kinds.add(kind);
+      if (!seenHere.has(k)) { e.n++; seenHere.add(k); }
+      m.set(k, e);
+    }
+  }
+  return m;
+}
+const countForLoc = (name) => (LOC_OPTIONS.get(norm(name)) || { n: 0 }).n;
+
+function setLoc(name, state) {
+  name = (name || "").trim();
+  if (!name) return;
+  const known = LOC_OPTIONS.get(norm(name));
+  if (known) name = known.name;
+  for (const k of Object.keys(prefs.loc)) if (norm(k) === norm(name)) delete prefs.loc[k];
+  if (state) prefs.loc[name] = state;
+}
+
+function renderPrefs() {
+  // Lieux choisis
+  const list = $("loc-list");
+  list.replaceChildren();
+  const entries = Object.entries(prefs.loc).sort((a, b) => a[1].localeCompare(b[1]) * -1 || a[0].localeCompare(b[0], "fr"));
+  if (!entries.length) list.append(el("span", { class: "count" }, "Aucun lieu choisi : tous les lieux sont neutres."));
+  for (const [name, state] of entries) {
+    const n = countForLoc(name);
+    const other = state === "prio" ? "excl" : "prio";
+    const toggle = el("button", { type: "button", title: state === "prio" ? "Passer en exclusion" : "Passer en priorité",
+      "aria-label": `${name} : passer en ${state === "prio" ? "exclusion" : "priorité"}` }, "⇄");
+    toggle.addEventListener("click", () => { setLoc(name, other); refresh(); });
+    const remove = el("button", { type: "button", title: "Retirer", "aria-label": `Retirer ${name}` }, "✕");
+    remove.addEventListener("click", () => { setLoc(name, null); refresh(); });
+    list.append(el("span", { class: `pchip ${state}` },
+      el("span", { class: "state", "aria-hidden": "true" }, state === "prio" ? "★" : "⊘"),
+      el("span", {}, name), el("span", { class: "n" }, `${n} offre${n > 1 ? "s" : ""}`),
+      el("span", { style: "position:absolute;left:-9999px" }, state === "prio" ? "(prioritaire)" : "(exclu)"),
+      toggle, remove));
+  }
+  const locOnly = $("loc-only");
+  locOnly.checked = prefs.locOnly;
+  locOnly.disabled = !hasPrio(prefs.loc);
+
+  // Types
+  const typeCounts = {};
+  for (const o of OFFERS) for (const t of o.types) typeCounts[t] = (typeCounts[t] || 0) + 1;
+  const tl = $("type-list");
+  tl.replaceChildren();
+  for (const t of TYPE_ORDER) {
+    const n = typeCounts[t] || 0;
+    const cur = prefs.type[t] || "neutral";
+    const seg = el("div", { class: "seg", role: "group", "aria-label": `Type ${t}` });
+    for (const s of ["prio", "neutral", "excl"]) {
+      const b = el("button", { type: "button", class: s, "aria-pressed": String(cur === s) }, STATE_LABEL[s]);
+      b.addEventListener("click", () => {
+        if (s === "neutral") delete prefs.type[t]; else prefs.type[t] = s;
+        refresh();
+      });
+      seg.append(b);
+    }
+    tl.append(el("div", { class: "type-row" },
+      el("span", {}, t, " ", el("span", { class: "n" }, `${n} offre${n > 1 ? "s" : ""}`)), seg));
+  }
+  const typeOnly = $("type-only");
+  typeOnly.checked = prefs.typeOnly;
+  typeOnly.disabled = !hasPrio(prefs.type);
+
+  $("bonus").value = prefs.bonus;
+  $("bonus-out").textContent = "+" + Math.round(prefs.bonus * 100) + " %";
+  const excl = OFFERS.filter((o) => o.excluded).length;
+  $("prefs-summary").textContent = `${OFFERS.length - excl} offres retenues sur ${OFFERS.length} · ${excl} exclue${excl > 1 ? "s" : ""}`;
+}
+
+function setupPrefs() {
+  LOC_OPTIONS = buildLocOptions(OFFERS);
+  const dl = $("loc-options");
+  for (const e of [...LOC_OPTIONS.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, "fr"))) {
+    dl.append(el("option", { value: e.name, label: `${[...e.kinds].join(" / ")} · ${e.n} offre${e.n > 1 ? "s" : ""}` }));
+  }
+  const add = (state) => { setLoc($("loc-input").value, state); $("loc-input").value = ""; refresh(); };
+  $("loc-form").addEventListener("submit", (e) => { e.preventDefault(); add("prio"); });
+  $("loc-excl").addEventListener("click", () => add("excl"));
+  $("loc-only").addEventListener("change", (e) => { prefs.locOnly = e.target.checked; refresh(); });
+  $("type-only").addEventListener("change", (e) => { prefs.typeOnly = e.target.checked; refresh(); });
+  $("bonus").addEventListener("input", (e) => { prefs.bonus = Number(e.target.value); refresh(); });
+  $("prefs-reset").addEventListener("click", () => { prefs = JSON.parse(JSON.stringify(DEFAULT_PREFS)); refresh(); });
+}
+
+function refresh() {
+  applyPrefs(OFFERS);
+  savePrefs();
+  renderPrefs();
+  renderHero(OFFERS);
+  showAll = false;
+  renderTable(OFFERS);
+  renderCharts(DATA, OFFERS);
 }
 
 /* ---------- Rendu ---------- */
@@ -339,28 +613,36 @@ function renderHeader(data) {
 }
 
 function renderHero(offers) {
-  const prio = offers.filter((o) => o.evaluable && !o.duplicate && o.isInternship && o.coverage >= MIN_COVERAGE);
-  const evaluable = offers.filter((o) => o.evaluable).length;
+  const kept = offers.filter((o) => !o.excluded);
+  const prio = kept.filter((o) => o.evaluable && !o.duplicate && o.coverage >= MIN_COVERAGE);
+  const inPrioLoc = prio.filter((o) => o.locState === "prio").length;
+  const evaluable = kept.filter((o) => o.evaluable).length;
   $("hero").replaceChildren(
     el("div", { class: "hero-value" }, prio.length),
     el("div", { class: "hero-text" },
-      el("strong", {}, prio.length === 1 ? "offre de stage à prioriser" : "offres de stage à prioriser"),
+      el("strong", {}, prio.length === 1 ? "offre à prioriser" : "offres à prioriser"),
       el("br"),
-      `Je possède au moins ${fmtPct(MIN_COVERAGE)} des compétences demandées. Seules ${evaluable} offres sur ${offers.length} ont pu être évaluées : le classement porte sur peu d'offres.`));
+      `Offres retenues par mes critères, où je possède au moins ${fmtPct(MIN_COVERAGE)} des compétences demandées`,
+      hasPrio(prefs.loc) ? ` (dont ${inPrioLoc} dans un de mes lieux prioritaires).` : ".",
+      el("span", { class: "hero-note" },
+        `Seules ${evaluable} des ${kept.length} offres retenues ont pu être évaluées : le classement porte sur peu d'offres.`)));
 }
 
 function renderTable(offers) {
   const q = norm($("q").value.trim());
   const onlyEval = $("only-eval").checked;
   const hideNoise = $("hide-noise").checked;
+  const showExcl = $("show-excl").checked;
   const rows = offers.filter((o) => {
+    if (!showExcl && o.excluded) return false;
     if (onlyEval && !o.evaluable) return false;
-    if (hideNoise && (o.duplicate || !o.isInternship)) return false;
+    if (hideNoise && o.duplicate) return false;
     if (!q) return true;
-    return norm([o.title, o.company, o.location, ...o.matched, ...o.gaps].join(" ")).includes(q);
+    return norm([o.title, o.company, o.location, ...o.locTokens, ...o.types, ...o.matched, ...o.gaps].join(" ")).includes(q);
   });
   const plural = rows.length > 1 ? "s" : "";
-  $("count").textContent = `${rows.length} offre${plural} correspondante${plural}`;
+  const nExcl = offers.filter((o) => o.excluded).length;
+  $("count").textContent = `${rows.length} offre${plural} affichée${plural}` + (nExcl && !showExcl ? ` · ${nExcl} exclue${nExcl > 1 ? "s" : ""} par mes critères` : "");
   const tbody = $("rows");
   tbody.replaceChildren();
   const more = $("more");
@@ -374,13 +656,19 @@ function renderTable(offers) {
     const url = safeUrl(o.url);
     const title = url ? el("a", { href: url, target: "_blank", rel: "noopener", class: "offer-title" }, o.title) : el("span", { class: "offer-title" }, o.title);
     const flags = [];
+    if (o.excluded) flags.push(el("span", { class: "tag excl" }, "exclue : " + o.excludedBy.join(" ; ")));
+    if (o.locState === "prio") flags.push(el("span", { class: "tag prio" }, "★ lieu prioritaire : " + o.locMatch));
+    if (o.typeState === "prio") flags.push(el("span", { class: "tag prio" }, "★ type prioritaire"));
     if (!o.evaluable) flags.push(el("span", { class: "tag" }, "non évaluable"));
     if (o.duplicate) flags.push(el("span", { class: "tag" }, "doublon"));
-    if (!o.isInternship) flags.push(el("span", { class: "tag" }, "pas un stage ?"));
-    tbody.append(el("tr", {},
-      el("td", { class: "num" }, o.evaluable ? fmtNum(o.score) : "—"),
+    const scoreCell = !o.evaluable ? "—"
+      : o.nPrio ? [fmtNum(o.final), el("div", { class: "meta", title: "Score compétences × multiplicateur des critères" },
+          `${fmtNum(o.score)} × ${fmtNum(o.multiplier, 2).replace(/,?0+$/, "")}`)]
+      : fmtNum(o.final);
+    tbody.append(el("tr", { class: o.excluded ? "excluded" : null },
+      el("td", { class: "num" }, scoreCell),
       el("td", { class: "num" }, o.evaluable ? [fmtPct(o.coverage), el("div", { class: "meter", "aria-hidden": "true" }, el("div", { style: `width:${o.coverage * 100}%` }))] : "—"),
-      el("td", {}, title, el("div", { class: "meta" }, [o.company, o.location].filter(Boolean).join(" · ")),
+      el("td", {}, title, el("div", { class: "meta" }, [o.types.join(" / "), o.company, o.location].filter(Boolean).join(" · ")),
         o.experience_required ? el("div", { class: "meta" }, "Exigence : " + o.experience_required) : null,
         o.compensation_mentioned ? el("div", { class: "meta" }, "Rémunération : " + o.compensation_mentioned) : null,
         flags.length ? el("div", { class: "chips" }, flags) : null),
@@ -391,27 +679,38 @@ function renderTable(offers) {
 }
 
 function renderCharts(data, offers) {
-  const evaluable = offers.filter((o) => o.evaluable);
-  barChart($("gaps-chart"), data.top_skill_gaps.slice(0, 8).map((g) => ({ label: g.skill, value: g.count })), {
+  // Recalculés sur les offres retenues : exclure l'Île-de-France change ce
+  // que « le marché » demande.
+  const kept = offers.filter((o) => !o.excluded);
+  const evaluable = kept.filter((o) => o.evaluable);
+  const levels = data.skill_levels || Object.fromEntries((data.top_matched_skills || []).map((m) => [m.skill, m.level]));
+  const tally = (key) => {
+    const c = new Map();
+    for (const o of kept) for (const s of o[key]) c.set(s, (c.get(s) || 0) + 1);
+    return [...c].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr")).slice(0, 8);
+  };
+  const topGaps = tally("gaps").map(([skill, count]) => ({ skill, count }));
+  const topMatched = tally("matched").map(([skill, count]) => ({ skill, count, level: levels[skill] }));
+  barChart($("gaps-chart"), topGaps.map((g) => ({ label: g.skill, value: g.count })), {
     color: "var(--series-2)",
     valueLabel: (it) => it.value,
     tipBody: (it) => `Demandée par ${it.value} offre${it.value > 1 ? "s" : ""} sur ${evaluable.length} évaluables.`,
     emptyText: "Aucune compétence manquante relevée.",
   });
-  barChart($("matched-chart"), data.top_matched_skills.slice(0, 8).map((m) => ({ label: m.skill, value: m.count, level: m.level })), {
+  barChart($("matched-chart"), topMatched.map((m) => ({ label: m.skill, value: m.count, level: m.level })), {
     color: "var(--series-1)",
-    valueLabel: (it) => [String(it.value), el("small", {}, ` · niveau ${it.level}/5`)],
-    tipBody: (it) => `Demandée par ${it.value} offre${it.value > 1 ? "s" : ""}. Mon niveau : ${it.level}/5.`,
+    valueLabel: (it) => [String(it.value), it.level != null ? el("small", {}, ` · niveau ${it.level}/5`) : null],
+    tipBody: (it) => `Demandée par ${it.value} offre${it.value > 1 ? "s" : ""}.` + (it.level != null ? ` Mon niveau : ${it.level}/5.` : ""),
     emptyText: "Aucune de mes compétences n'a été retrouvée dans les offres.",
   });
 
   // Histogramme : tranches de 0,1 sur les offres évaluables
   const hist = $("hist-chart");
   hist.replaceChildren();
-  if (!evaluable.length) { hist.append(el("p", { class: "empty" }, "Aucune offre évaluable.")); return; }
-  const step = 0.1, nb = Math.max(1, Math.ceil((Math.max(...evaluable.map((o) => o.score)) + 1e-9) / step));
+  if (!evaluable.length) { hist.append(el("p", { class: "empty" }, "Aucune offre évaluable parmi les offres retenues.")); return; }
+  const step = 0.1, nb = Math.max(1, Math.ceil((Math.max(...evaluable.map((o) => o.final)) + 1e-9) / step));
   const bins = Array.from({ length: nb }, (_, i) => ({ lo: i * step, hi: (i + 1) * step, n: 0 }));
-  for (const o of evaluable) bins[Math.min(nb - 1, Math.floor(o.score / step))].n++;
+  for (const o of evaluable) bins[Math.min(nb - 1, Math.floor(o.final / step))].n++;
   const max = Math.max(...bins.map((b) => b.n), 1);
   const cols = el("div", { class: "hist" });
   const axis = el("div", { class: "hist-axis", "aria-hidden": "true" });
@@ -509,18 +808,15 @@ async function main() {
     $("freshness").textContent = "Impossible de charger data/matches.json (" + e.message + ").";
     return;
   }
-  const offers = data.offers;
-  annotate(offers);
-  // Offres évaluables d'abord (par score), puis les non évaluables (les plus récentes d'abord)
-  offers.sort((a, b) => (b.evaluable - a.evaluable) || (b.score - a.score)
-    || String(b.date_posted || "").localeCompare(String(a.date_posted || "")));
+  DATA = data;
+  OFFERS = data.offers;
+  annotate(OFFERS);
   const age = renderHeader(data);
-  renderHero(offers);
-  renderTable(offers);
-  for (const id of ["q", "only-eval", "hide-noise"]) $(id).addEventListener("input", () => { showAll = false; renderTable(offers); });
-  $("more").addEventListener("click", () => { showAll = true; renderTable(offers); });
-  renderCharts(data, offers);
-  renderPipeline(data, offers, age);
+  setupPrefs();
+  refresh();  // applique les critères (score ajusté, exclusions) puis dessine
+  for (const id of ["q", "only-eval", "hide-noise", "show-excl"]) $(id).addEventListener("input", () => { showAll = false; renderTable(OFFERS); });
+  $("more").addEventListener("click", () => { showAll = true; renderTable(OFFERS); });
+  renderPipeline(data, OFFERS, age);
 
   let apps = [];
   try {

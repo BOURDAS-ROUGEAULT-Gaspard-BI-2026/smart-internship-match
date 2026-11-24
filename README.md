@@ -94,9 +94,30 @@ versionné. Je les relis et les corrige avant tout usage.
 
 `docs/index.html`, publié sur GitHub Pages. Chaque bloc indique à quoi il sert :
 
-- **Où postuler en premier** : tableau des offres trié par score, avec la couverture, les
-  compétences que j'ai et celles qui manquent, et le lien vers l'offre. Recherche texte,
-  filtre « seulement les offres évaluables » et filtre qui masque doublons et non-stages.
+- **Mes critères** (ajouté après le retour de l'enseignant) : des filtres qui entrent dans
+  le calcul du score, pas seulement dans l'affichage.
+  - **Lieu** : on ajoute autant de villes, départements ou régions que voulu, chacun
+    *prioritaire* ou *exclu* (ex. : Le Mans et Nantes prioritaires, Île-de-France exclue).
+    Le niveau le plus précis l'emporte : exclure une région mais prioriser une de ses villes
+    garde cette ville.
+  - **Type d'offre** (Stage, Alternance, CDI, CDD, Non précisé) : priorité, neutre ou
+    exclusion pour chacun. Par défaut, alternance, CDI et CDD sont exclus.
+  - Pour chaque critère, une option « seulement mes priorités » exclut tout le reste.
+  - **Score ajusté** = score compétences × (1 + bonus × nombre de critères prioritaires
+    remplis), avec un bonus réglable (50 % par défaut). Le multiplicateur est affiché sous
+    chaque score. Les critères ne remplacent pas les compétences : une offre à 0 reste à 0.
+  - Les offres exclues sortent du classement, du compteur principal et des graphiques
+    d'efficacité, qui sont recalculés sur les offres retenues. Elles restent visibles
+    (grisées, avec la raison) si on coche « afficher les offres exclues ».
+  - Les critères sont gardés dans le navigateur (`localStorage`).
+  - Région, département, ville et type sont calculés par `scripts/offer_attributes.py`,
+    appelé par `merge_offer_sources.py` (à partir du champ `location.area` d'Adzuna, le plus
+    fiable) et, en secours, par `match_offers.py` (à partir du texte du lieu et du titre).
+    Le type est lu dans le titre, car Adzuna n'a pas de type « stage ».
+- **Où postuler en premier** : tableau des offres trié par score ajusté, avec la
+  couverture, les compétences que j'ai et celles qui manquent, et le lien vers l'offre.
+  Recherche texte, filtre « seulement les offres évaluables » et filtre qui masque les
+  doublons.
 - **Efficacité de la recherche** : compétences manquantes les plus demandées (quoi
   apprendre), mes compétences les plus demandées avec mon niveau (quoi mettre en avant
   dans le CV), répartition des scores (la recherche ramène-t-elle des offres adaptées ou

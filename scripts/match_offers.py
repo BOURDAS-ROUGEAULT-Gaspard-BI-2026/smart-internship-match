@@ -1,5 +1,7 @@
 import csv, json, os, re, time, unicodedata
 
+from offer_attributes import offer_attributes
+
 def load_profile(path="data/profile/my_skills.csv"):
     profile = {}
     with open(path, encoding="utf-8") as f:
@@ -162,6 +164,11 @@ def build_output(results, profile):
         # this is reported as a count, not built into a chart that would mostly be
         # empty space.
         "n_offers_with_compensation": n_with_comp,
+        # Niveau de chaque compétence du profil : le dashboard recalcule les
+        # graphiques "compétences les plus demandées" sur les seules offres
+        # retenues par les filtres (lieu, type), donc il lui faut tous les
+        # niveaux, pas seulement ceux du top 10 ci-dessus.
+        "skill_levels": {s: p["level"] for s, p in profile.items()},
     }
 
 def main():
@@ -182,7 +189,15 @@ def main():
         m = score_offer(profile, offer["required_skills"])
         src = links.get(offer["id"], {})
         extra = {"url": src.get("url"), "date_posted": src.get("date_posted")}
-        results.append({**extra, **offer, **m})
+        # Lieu découpé et type d'offre (filtres du dashboard). Pris dans
+        # merged_offers.json quand il les a (lu depuis "area" d'Adzuna) ; sinon
+        # recalculés depuis le texte du lieu et le titre, pour qu'un
+        # structured_offers.json produit avant cet ajout reste utilisable.
+        attrs = offer_attributes(location=offer.get("location"), title=offer.get("title"))
+        for k in attrs:
+            if src.get(k) is not None:
+                attrs[k] = src[k]
+        results.append({**extra, **offer, **attrs, **m})
 
     results.sort(key=lambda r: r["score"], reverse=True)
     for r in results:

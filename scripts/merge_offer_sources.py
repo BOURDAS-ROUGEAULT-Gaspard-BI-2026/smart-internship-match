@@ -1,5 +1,7 @@
 import json, os, re
 
+from offer_attributes import offer_attributes
+
 RAW_ADZUNA_PATH = "data/offers/raw_offers.json"
 JOBSPY_PATH = "data/offers/jobspy_offers.json"
 MERGED_PATH = "data/offers/merged_offers.json"
@@ -29,6 +31,13 @@ def normalize_adzuna(raw_offers):
             # attributed to Adzuna and link to redirect_url -- if you publish
             # them, show "Jobs by Adzuna" and keep the url.
             "publishable": True,
+            # Région / département / ville et type d'offre, pour les filtres du
+            # dashboard. "area" (pays, région, département, ..., ville) est la
+            # source la plus fiable : on la lit ici, tant qu'on a la réponse brute.
+            **offer_attributes(
+                location=(o.get("location") or {}).get("display_name"),
+                area=(o.get("location") or {}).get("area"),
+                title=title, contract_type=o.get("contract_type")),
         })
     return normalized
 
@@ -40,7 +49,10 @@ def load_jobspy():
         data = json.load(f)
     return [
         {**o, "is_apprenticeship": False, "accessible_disability": False,
-         "publishable": False}  # scraped content -- never published, see Step 11b
+         "publishable": False,  # scraped content -- never published, see Step 11b
+         # fetch_offers_jobspy.py ne garde que job_type == "internship"
+         **offer_attributes(location=o.get("location"), title=o.get("title"),
+                            job_type=o.get("job_type", "internship"))}
         for o in data["offers"]
     ]
 

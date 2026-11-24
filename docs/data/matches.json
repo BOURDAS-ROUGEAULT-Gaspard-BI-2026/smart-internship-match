@@ -13,6 +13,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Python"
       ],
@@ -37,6 +43,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Python",
         "VBA"
@@ -67,6 +79,12 @@
       "is_apprenticeship": true,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Bretagne",
+      "department": "Ille-et-Vilaine",
+      "city": "Rennes",
+      "offer_types": [
+        "Alternance"
+      ],
       "required_skills": [
         "Java"
       ],
@@ -93,6 +111,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Python",
         "VBA"
@@ -123,6 +147,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "GitLab",
         "Kibana"
@@ -154,6 +184,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Drôme",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -174,6 +210,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Paris",
+      "city": "Paris",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -194,6 +236,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -214,6 +262,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Rhône",
+      "city": "Colombier-Saugnieu",
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -234,6 +288,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Maine-et-Loire",
+      "city": null,
+      "offer_types": [
+        "CDD"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -254,6 +314,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": "Gémenos",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -274,6 +340,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Puy-de-Dôme",
+      "city": "Clermont-Ferrand",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Création d’un outil de conception génératif permettant de dimensionner et de trier des solutions de renforcement pour le domaine du renfort métallique"
@@ -296,6 +368,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Essonne",
+      "city": "Limours",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -316,6 +394,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -336,6 +420,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": "Marseille",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -356,6 +446,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Bordeaux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -376,6 +472,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Occitanie",
+      "department": "Haute-Garonne",
+      "city": "Toulouse",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -396,6 +498,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -416,6 +524,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -436,6 +550,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Saint-Médard-en-Jalles",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Informatique Industrielle",
         "Automatisme",
@@ -466,6 +586,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Bordeaux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -486,6 +612,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Bordeaux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -506,6 +638,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Normandie",
+      "department": "Seine-Maritime",
+      "city": "Rouen",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -526,6 +664,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -546,6 +690,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -566,6 +716,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -586,6 +742,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Grasse",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -606,6 +768,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Hauts-de-Seine",
+      "city": "Gennevilliers",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -626,6 +794,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -646,6 +820,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -666,6 +846,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -686,6 +872,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Maine-et-Loire",
+      "city": "Cholet",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -706,6 +898,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Hauts-de-Seine",
+      "city": "Gennevilliers",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -726,6 +924,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Cannes",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -746,6 +950,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -766,6 +976,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Val-de-Marne",
+      "city": "L'Haÿ-les-Roses",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -786,6 +1002,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Bordeaux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -806,6 +1028,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -826,6 +1054,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Grasse",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -846,6 +1080,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Maine-et-Loire",
+      "city": "Cholet",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -866,6 +1106,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Occitanie",
+      "department": "Haute-Garonne",
+      "city": "Toulouse",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -886,6 +1132,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": "Bordeaux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -906,6 +1158,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Loire-Atlantique",
+      "city": "Saint-Nazaire",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Optimiser la disposition des pièces métalliques dans les tôles afin de limiter la consommation de matière première",
@@ -930,6 +1188,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Loire-Atlantique",
+      "city": "Saint-Nazaire",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Accompanied the teams in the use of computer tools",
@@ -953,6 +1217,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Puy-de-Dôme",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -973,6 +1243,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Hauts-de-Seine",
+      "city": "Montrouge",
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -993,6 +1269,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1013,6 +1295,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1033,6 +1321,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Loire-Atlantique",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1053,6 +1347,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1073,6 +1373,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1093,6 +1399,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1113,6 +1425,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Participer à la mise en place et à la formalisation du dispositif de continuité d'activité des Systèmes d'Information",
@@ -1136,6 +1454,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Rhône",
+      "city": null,
+      "offer_types": [
+        "CDI"
+      ],
       "required_skills": [],
       "responsibilities": [
         "accompagner les utilisateurs au quotidien dans la résolution de leurs problématiques IT"
@@ -1158,6 +1482,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1178,6 +1508,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1198,6 +1534,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Antibes-Biot",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1218,6 +1560,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Occitanie",
+      "department": "Haute-Garonne",
+      "city": "Rangueuil",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "LU",
         "XML"
@@ -1246,6 +1594,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Montigny-le-Bretonneux",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1266,6 +1620,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1286,6 +1646,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1306,6 +1672,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Paris",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1326,6 +1698,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1346,6 +1724,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1366,6 +1750,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Hauts-de-France",
+      "department": "Somme",
+      "city": "Rue",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1386,6 +1776,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Hauts-de-France",
+      "department": "Somme",
+      "city": "Rue",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1406,6 +1802,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Normandie",
+      "department": "Manche",
+      "city": "Tourlaville",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1426,6 +1828,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Var",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1446,6 +1854,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Var",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1466,6 +1880,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Hauts-de-Seine",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Azure"
       ],
@@ -1496,6 +1916,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Paris",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1516,6 +1942,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Bourgogne-Franche-Comté",
+      "department": "Côte-d'Or",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "IT/OT infrastructures",
         "modes opératoires informatiques"
@@ -1545,6 +1977,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Bourgogne-Franche-Comté",
+      "department": "Côte-d'Or",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "maintien en condition opérationnelle",
@@ -1569,6 +2007,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Isère",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Assistance Utilisateur : Répondre aux demandes d'assistance des utilisateurs, résoudre les problèmes techniques et offrir un excellent service client.",
@@ -1592,6 +2036,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1612,6 +2062,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [
         "Power BI"
       ],
@@ -1639,6 +2095,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Hauts-de-Seine",
+      "city": "Montrouge",
+      "offer_types": [
+        "Non précisé"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1659,6 +2121,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1679,6 +2147,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Vélizy-Villacoublay",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Participate in the setup and formalization of the continuity plan for IT systems"
@@ -1701,6 +2175,12 @@
       "is_apprenticeship": true,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Alternance"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Travailler sur des projets de développement web",
@@ -1724,6 +2204,13 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Maine-et-Loire",
+      "city": "Cholet 1er Canton",
+      "offer_types": [
+        "Stage",
+        "CDD"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1744,6 +2231,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Occitanie",
+      "department": "Haute-Garonne",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1764,6 +2257,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1784,6 +2283,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Pays de la Loire",
+      "department": "Maine-et-Loire",
+      "city": "Cholet 1er Canton",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1804,6 +2309,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": " Gémenos",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1824,6 +2335,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1844,6 +2361,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1864,6 +2387,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1884,6 +2413,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": "Élancourt",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1904,6 +2439,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Nouvelle-Aquitaine",
+      "department": "Gironde",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1924,6 +2465,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Occitanie",
+      "department": "Haute-Garonne",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -1944,6 +2491,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Work on concrete projects to transform knowledge into skills"
@@ -1966,6 +2519,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Work on concrete projects to develop skills",
@@ -1989,6 +2548,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2009,6 +2574,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Organize recruitment forums",
@@ -2032,6 +2603,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Alpes-Maritimes",
+      "city": "Antibes-Biot",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": null,
       "responsibilities": null,
       "experience_required": null,
@@ -2052,6 +2629,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Auvergne-Rhône-Alpes",
+      "department": "Ain",
+      "city": "Collonges",
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [
         "Organiser des forums de recrutement",
@@ -2076,6 +2659,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Provence-Alpes-Côte d'Azur",
+      "department": "Bouches-du-Rhône",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2096,6 +2685,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": null,
+      "department": null,
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2116,6 +2711,12 @@
       "is_apprenticeship": false,
       "accessible_disability": false,
       "publishable": true,
+      "region": "Île-de-France",
+      "department": "Yvelines",
+      "city": null,
+      "offer_types": [
+        "Stage"
+      ],
       "required_skills": [],
       "responsibilities": [],
       "experience_required": null,
@@ -2185,5 +2786,32 @@
       "level": 3
     }
   ],
-  "n_offers_with_compensation": 0
+  "n_offers_with_compensation": 0,
+  "skill_levels": {
+    "Python": 4,
+    "Java": 3,
+    "JavaScript": 3,
+    "C": 3,
+    "C#": 2,
+    "Kotlin": 2,
+    "SQL": 3,
+    "MySQL": 3,
+    "PostgreSQL": 3,
+    "HTML": 3,
+    "CSS": 3,
+    "PHP": 2,
+    "Git": 3,
+    "API REST": 2,
+    "Hugging Face": 2,
+    "Machine Learning": 2,
+    "Data Analysis": 2,
+    "Unity": 2,
+    "Blender": 2,
+    "Figma": 2,
+    "Android Studio": 2,
+    "Network": 2,
+    "Cybersecurity": 2,
+    "Project Management": 3,
+    "English": 4
+  }
 }
